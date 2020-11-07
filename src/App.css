@@ -1,0 +1,87 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+/*Header section*/
+.page-NavBar {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    border-bottom: solid #36655313 2px;
+}
+.logo-Name {
+    color: #366553;
+    flex: 1;
+}
+.navBar-Buttons {
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.navBar-Button {
+    cursor: pointer;
+    list-style: none;
+    color: #374d44;
+    padding: 10px; 
+    border: solid rgba(0, 0, 0, 0) 2px;
+}
+.navBar-products:hover {
+    border: solid #4d9b7d 2px;
+    border-radius: 5px;
+    transition: ease-in 0.2s;
+}
+/*Hamburger*/
+ .nochange .bar1,.nochange .bar2,.nochange .bar3 {
+    width: 40px;
+    height: 4px;
+    background-color: #366553;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .hamburgerMenu-options {
+      top: 100px;
+      left: 0%;
+      width: 0%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      background-color: #4e6d61;
+      position: absolute;
+      list-style: none;
+      text-align: center;
+      justify-content: flex-start;
+      transition: ease-out 0.4s;
+      color: white;
+  }
+  .hamburgerMenu-option {
+      opacity: 0;
+      margin-top: 50px;
+      font-weight: lighter;
+  }
+  .hamburgerMenu-optionsTransition {
+      width: 50%;
+      transition: ease-in 0.4s;
+  }
+  .hamburgerMenu-optionTransition {
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+      opacity: 1;
+  }
