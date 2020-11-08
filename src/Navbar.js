@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import HamburgerMenu from './components/HamburgerMenu'
+import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu'
 function NavBar() {
     const [showBurger, setBurger] = useState(true);
     const showNavBarMenu = () => {

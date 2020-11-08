@@ -170,3 +170,10 @@
     width: 60%;
     margin-left: 20%;
 }
+/*Products section*/
+.products-container {
+    padding-top: 100px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
