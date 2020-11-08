@@ -14,7 +14,7 @@ function HomePage() {
                         <button>SHOP ONLINE </button>
                     </div>
                 </div>
-                <img className="home-box2" src={BackgroundPhoto}></img>
+                <div className="home-box2"> </div>
             </div>
             <div className="home-text">
                 <h3>You are what you drink</h3>

@@ -102,11 +102,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 40%;
+    width: 67%;
+    height: 600px;
     justify-content: space-evenly;
 }
 .home-box2 {
-    width: 60%;
+    background-image: url(/src/Photos/1.jpg);
+    background-repeat: repeat-y;
+    background-position: -160px;
+    width: 33%;
 }
 .home-Title {
     margin-left: 10%;
