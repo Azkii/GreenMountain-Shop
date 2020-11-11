@@ -2,4 +2,7 @@
     .categories-container {
         display: none;
     }
+    .products-list {
+        margin-left: 0;
+    }
 }
