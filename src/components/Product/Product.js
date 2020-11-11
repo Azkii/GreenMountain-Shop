@@ -9,7 +9,7 @@ function Product(props) {
             <h2 className="product-name">{props.product.name} Tea</h2>
             <p className="product-price">{props.product.price[0]}$~{props.product.price[2]}$</p>
             {click ? "" : ( 
-            <div className="HoverDetails">
+            <div className={click ? "HoverDetails" : "HoverDetails HoverDetails2"}>
                 <button className="hoverDetails-Discover">
                     Discover
                 </button>

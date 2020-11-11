@@ -14,11 +14,11 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12),
-    0px 0px 1px 1px #00000009
+    0px 0px 1px 1px #00000009;
+    transition: ease-out 0.2s;
 }
 .product-photo {
     width: 330px;
-    margin-bottom: 25px;
 }
 .product-name {
     letter-spacing: 2px;
@@ -33,6 +33,7 @@
 /*HoverDetails*/
 .product-ContainerHover {
     height: 600px;
+    transition: ease-in 0.2s;
 }
 .HoverDetails {
     display: flex;
@@ -47,6 +48,10 @@
     font-size: 15px;
     color: #363636;
     margin-top: 25px;
+    opacity: 0.9;
+}
+.hoverDetails-Discover:hover {
+    opacity: 1;
 }
 .hoverDetails-Checkout {
     width: 150px;
@@ -56,4 +61,8 @@
     color: white;
     background-color: #363636;
     margin-top: 25px;
+    opacity: 0.9;
+}
+.hoverDetails-Checkout:hover {
+    opacity: 1;
 }
