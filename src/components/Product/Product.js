@@ -4,6 +4,7 @@ function Product(props) {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)
     return (
+        <div className="testArea">
         <div onMouseEnter={handleClick} onMouseLeave = {handleClick} className={click ? "product-Container" : "product-ContainerHover product-Container" }>
             <img className="product-photo" src={props.product.image} alt="Tea-example"/>
             <h2 className="product-name">{props.product.name} Tea</h2>
@@ -17,6 +18,7 @@ function Product(props) {
                     ADD TO CARD
                 </button>
             </div>)}
+        </div>
         </div>
     )
 }
