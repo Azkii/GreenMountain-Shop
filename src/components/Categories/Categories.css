@@ -33,7 +33,7 @@
 }
 .categories-plusTransition {
     transition: ease-in 0.4s;
-    transform: rotate(-50deg);
+    transform: rotate(-45deg);
 }
 .categories-options {
     margin-top: 25px;

@@ -64,7 +64,8 @@
       display: flex;
       flex-direction: column;
       background-color: #4e6d61;
-      position: absolute;
+      position: fixed;
+      z-index: 100;
       list-style: none;
       text-align: center;
       justify-content: flex-start;
@@ -176,4 +177,15 @@
     text-align: center;
     width: 80%;
     margin: auto;
+}
+.products-boxFlex {
+    margin-top: 50px;
+    display: flex;
+}
+.products-categories {
+    margin-top: 50px;
+}
+.products-list {
+    display: flex;
+    margin-left: 25px;
 }
