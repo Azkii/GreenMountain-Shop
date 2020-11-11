@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Categories.css'
+import './CategoriesMobile.css'
 function Categories() {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)

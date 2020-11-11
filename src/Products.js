@@ -10,7 +10,6 @@ function Products() {
             />)
     return (
         <div className="products-container">
-            <h1>New arivals</h1>
             <div className="products-boxFlex">
                 <div className="products-categories">
                     <Categories />
