@@ -17,9 +17,9 @@ function NavBar() {
             <h1 className="logo-Name">Green Mountain.</h1>
             {showBurger ? ( 
             <ul className="navBar-Buttons">
-                <li className="navBar-Button">Home</li>
-                <li className="navBar-Button">About us</li>
-                <li className="navBar-Button navBar-products">Products</li>
+                <li className="navBar-Button">Home.</li>
+                <li className="navBar-Button">About us.</li>
+                <li className="navBar-Button navBar-products">Products.</li>
             </ul> ) : <HamburgerMenu  /> }
         </nav>
     )

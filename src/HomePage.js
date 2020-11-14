@@ -10,7 +10,7 @@ function HomePage() {
                     </div>
                     <div className="home-content">
                         <p>Consectetur adipiscing elit. Curabitur luctus diam ut arcu elementum venenatis. Integer in mattis sapien, non fermentum ante. In a ligula purus.</p>
-                        <button>SHOP ONLINE </button>
+                        <button>SHOP ONLINE. </button>
                     </div>
                 </div>
                 <div className="home-box2"> </div>
