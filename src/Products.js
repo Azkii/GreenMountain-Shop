@@ -2,25 +2,29 @@ import React from 'react'
 import Categories from './components/Categories/Categories'
 import Product from './components/Product/Product'
 import ProductsDataBase from "./productDataBase"
+//Imported buttons
+import ShowMore from './components/Product/ShowMore'
+import ShowAll from './components/Product/ShowAll'
 class Products extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             kotek: 6
         }
-        this.showAll = this.showAll.bind(this)
+        this.showMore = this.showMore.bind(this)
+        this.showButton = <ShowMore content={{showMore: this.showMore}} />
     }
-    showAll() {
+    showMore() {
         this.setState(prevState => {
             return {
                 kotek: prevState.kotek + 3
             }
         })
         if (this.state.kotek + 3 >= 12) {
-            console.log("xd")
+            this.showButton = <ShowAll />
         }
         else {
-            console.log("adam")
+            this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
     render() {
@@ -40,14 +44,7 @@ class Products extends React.Component {
                         {ProductListSliced}
                     </div>
                 </div>
-                <button 
-                    className="products-ButtonShowMore"
-                    onClick={
-                        this.showAll
-                    }
-                >
-                    Show more.
-                </button>
+                {this.showButton}
             </div>
         )
     }
