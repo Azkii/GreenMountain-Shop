@@ -30,13 +30,12 @@ class Products extends React.Component {
         }
     }
     sliced() {
-        if(window.innerWidth <= 1000) {
+        if(window.innerWidth <= 700) {
             this.setState(() => {
                 return {
                     sliced: 3
                 }
             })
-            console.log("xd")
         }
         else {
             this.setState(() => {
@@ -46,7 +45,6 @@ class Products extends React.Component {
             })
         }
     }
-
     render() {
         const ProductList = ProductsDataBase.map(product =>
             <Product
@@ -57,6 +55,17 @@ class Products extends React.Component {
         let ProductListSliced = ProductList.slice(0, this.state.kotek / this.state.sliced)
         window.addEventListener('load', this.sliced)
         window.addEventListener('resize', this.sliced)
+
+        //sort by value do dokonczenia
+        function sortValue() {
+            ProductListSliced.sort(function(a ,b) {
+                console.log(b.props.product.price[0])
+                return a.props.product.price[0] - b.props.product.price[0]
+            })
+        }
+        //Do dokonczenia sortuje ale nie wykonuje, brakuje useEffect
+        
+
         return (
             <div className="products-container">
                 <div className="products-boxFlex">

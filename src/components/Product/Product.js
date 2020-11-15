@@ -10,14 +10,15 @@ function Product(props) {
             <h2 className="product-name">{props.product.name} Tea</h2>
             <p className="product-price">{props.product.price[0]}$~{props.product.price[2]}$</p>
             {click ? "" : ( 
-            <div className={click ? "HoverDetails" : "HoverDetails HoverDetails2"}>
-                <button className="hoverDetails-Discover">
-                    Discover
-                </button>
-                <button className="hoverDetails-Checkout">
-                    ADD TO CARD
-                </button>
-            </div>)}
+                <div className={click ? "HoverDetails" : "HoverDetails HoverDetails2"}>
+                    <button className="hoverDetails-Discover">
+                        Discover
+                    </button>
+                    <button className="hoverDetails-Checkout">
+                        ADD TO CARD
+                    </button>
+                </div>
+            )}
         </div>
         </div>
     )

@@ -50,6 +50,9 @@
     cursor: pointer;
     opacity: 0.5;
 }
+.categories-option:hover {
+    opacity: 0.8;
+}
 .filterby-Box {
     display: flex;
     flex-direction: column;
@@ -61,6 +64,9 @@
     text-align: left;
     cursor: pointer;
     opacity: 0.5;
+}
+.filterby-Name:hover {
+    opacity: 0.8;
 }
 .filterby-price {
     margin-top: 25px;
@@ -75,4 +81,7 @@
     font-size: 20px;
     margin-top: 10px;
     text-align: left;
+}
+.filterby-price div:hover {
+    opacity: 0.8;
 }
