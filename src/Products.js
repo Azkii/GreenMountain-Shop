@@ -19,6 +19,8 @@ class Products extends React.Component {
         this.showMore = this.showMore.bind(this)
         this.sliced = this.sliced.bind(this)
         this.categoriesByTypeBlack = this.categoriesByTypeBlack.bind(this)
+        this.categoriesByTypeGreen = this.categoriesByTypeGreen.bind(this)
+        this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
         this.showButton = <ShowMore content={{showMore: this.showMore}} />
     }
     showMore() {
@@ -121,7 +123,9 @@ class Products extends React.Component {
             <Product
                 key={product.id}
                 product={product}
-                content={{buttonClicked: this.state.catBlackTea}}
+                content={{
+                    catBlackTea: this.state.catBlackTea
+                }}
             />)
         //sliced for phones
         let ProductListSliced = ProductList.slice(0, this.state.kotek / this.state.sliced)
@@ -139,7 +143,17 @@ class Products extends React.Component {
             <div className="products-container">
                 <div className="products-boxFlex">
                     <div className="products-categories">
-                        <Categories content={{categoriesByTypeBlack: this.categoriesByTypeBlack, buttonClicked: this.state.catBlackTea}}/>
+                        <Categories 
+                            content={{
+                                categoriesByTypeBlack: this.categoriesByTypeBlack, 
+                                catBlackTea: this.state.catBlackTea,
+                                categoriesByTypeGreen: this.categoriesByTypeGreen,
+                                catGreenTea: this.state.catGreenTea,
+                                categoriesByTypeOolong: this.categoriesByTypeOolong,
+                                catOolongTea: this.state.catOolongTea,
+                                categoriesByTypeWhite: this.categoriesByTypeWhite,
+                                catWhiteTea: this.state.catWhiteTea,
+                            }}/>
                     </div>
                     <div className="products-list">
                         {ProductListSliced}

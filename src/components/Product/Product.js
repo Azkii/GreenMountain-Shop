@@ -22,7 +22,7 @@ function Product(props) {
                         </div>
                     </div>
 //Product END
-        if(props.content.buttonClicked === true) {
+        if(props.content.catBlackTea === true) {
             console.log("display only black tea")
             if (props.product.type === "black-tea") {
                 

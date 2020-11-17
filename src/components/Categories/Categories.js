@@ -16,9 +16,9 @@ function Categories(props) {
                 </div>
                 <div>
                     <ul className={click ? "show-Dummy" : "categories-options"}>
-                        <li className={props.content.buttonClicked ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeBlack}>Black tea</li>
-                        <li className="categories-option">Green tea</li>
-                        <li className="categories-option">Oolong tea</li>
+                        <li className={props.content.catBlackTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeBlack} >Black tea</li>
+                        <li className={props.content.catGreenTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeGreen} >Green tea</li>
+                        <li className={props.content.catOolongTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeOolong}>Oolong tea</li>
                         <li className="categories-option">White tea</li>
                     </ul>
                 </div>
