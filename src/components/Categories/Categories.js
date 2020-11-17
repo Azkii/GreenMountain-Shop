@@ -18,8 +18,8 @@ function Categories(props) {
                     <ul className={click ? "show-Dummy" : "categories-options"}>
                         <li className={props.content.catBlackTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeBlack} >Black tea</li>
                         <li className={props.content.catGreenTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeGreen} >Green tea</li>
-                        <li className={props.content.catOolongTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeOolong}>Oolong tea</li>
-                        <li className="categories-option">White tea</li>
+                        <li className={props.content.catOolongTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeOolong} >Oolong tea</li>
+                        <li className={props.content.catWhiteTea ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeWhite} >White tea</li>
                     </ul>
                 </div>
             </div>

@@ -22,13 +22,26 @@ function Product(props) {
                         </div>
                     </div>
 //Product END
-        if(props.content.catBlackTea === true) {
-            console.log("display only black tea")
-            if (props.product.type === "black-tea") {
-                
+        if(props.content.catBlackTea === true || props.content.catGreenTea === true || props.content.catOolongTea === true || props.content.catWhiteTea === true) {
+            if (props.content.catBlackTea === false) {
+                if (props.product.type === "black-tea") {
+                    contnet = ""
+                }
             }
-            else {
-                contnet = ""
+            if (props.content.catGreenTea === false) {
+                if (props.product.type === "green-tea") {
+                    contnet = ""
+                }
+            }
+            if (props.content.catOolongTea === false) {
+                if (props.product.type === "oolong-tea") {
+                    contnet = ""
+                }
+            }
+            if (props.content.catWhiteTea === false) {
+                if (props.product.type === "white-tea") {
+                    contnet = ""
+                }
             }
         }
     return (

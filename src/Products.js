@@ -21,6 +21,7 @@ class Products extends React.Component {
         this.categoriesByTypeBlack = this.categoriesByTypeBlack.bind(this)
         this.categoriesByTypeGreen = this.categoriesByTypeGreen.bind(this)
         this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
+        this.categoriesByTypeWhite = this.categoriesByTypeWhite.bind(this)
         this.showButton = <ShowMore content={{showMore: this.showMore}} />
     }
     showMore() {
@@ -124,7 +125,10 @@ class Products extends React.Component {
                 key={product.id}
                 product={product}
                 content={{
-                    catBlackTea: this.state.catBlackTea
+                    catBlackTea: this.state.catBlackTea,
+                    catGreenTea: this.state.catGreenTea,
+                    catOolongTea: this.state.catOolongTea,
+                    catWhiteTea: this.state.catWhiteTea,
                 }}
             />)
         //sliced for phones
