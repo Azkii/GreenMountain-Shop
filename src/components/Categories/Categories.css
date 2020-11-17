@@ -50,6 +50,9 @@
     cursor: pointer;
     opacity: 0.5;
 }
+.categories-optionClicked {
+    opacity: 1;
+}
 .categories-option:hover {
     opacity: 0.8;
 }

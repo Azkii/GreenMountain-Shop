@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Categories.css'
 import './CategoriesMobile.css'
-function Categories() {
+function Categories(props) {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)
     const [click2, setClick2] = useState(true)
@@ -16,7 +16,7 @@ function Categories() {
                 </div>
                 <div>
                     <ul className={click ? "show-Dummy" : "categories-options"}>
-                        <li className="categories-option">Black tea</li>
+                        <li className={props.content.buttonClicked ? "categories-option categories-optionClicked" : "categories-option" } onClick={props.content.categoriesByTypeBlack}>Black tea</li>
                         <li className="categories-option">Green tea</li>
                         <li className="categories-option">Oolong tea</li>
                         <li className="categories-option">White tea</li>
