@@ -14,6 +14,13 @@
     .home-content p {
         font-size: 20px;
     }
+    .aboutUs-Background h1 {
+        font-size: 45px;
+    }
+    .aboutUs-Title {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .products-ButtonShowMore {
