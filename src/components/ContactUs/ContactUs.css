@@ -1,0 +1,93 @@
+.contactUs-Container {
+    display: flex;
+    max-width: 100%;
+    min-width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+.contactUs-ContentBox {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.contactUs-ContentBox h3{
+    text-align: left;
+    font-size: 25px;
+}
+.contactUs-ContentText {
+    margin-top: 25px;
+    line-height: 150%;
+}
+.contactUs-ContactOptions {
+    list-style: none;
+    margin-top: 50px;
+}
+.contactUs-ContactOption {
+    margin-bottom: 25px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+.contactUs-ContactOption img {
+    width: 25px;
+    margin-right: 25px;
+}
+/*form section*/
+.contactUs-Form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+}
+.contactUs-Form div {
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    padding: 0px 50px 25px 50px;
+    width: 400px;
+    height: 425px;
+    justify-content: space-evenly;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12),
+    0px 0px 1px 1px #00000009;
+    color: #193439;
+}
+.contactUs-Form div h4 {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.contactUs-InputInfo {
+    border: solid #193439 1.5px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+}
+.contactUs-InputMessage {
+    border: solid #193439 1.5px;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+    font-size: 15px;
+}
+.contactUs-Form div button {
+    height: 35px;
+    background-color: #193439;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}

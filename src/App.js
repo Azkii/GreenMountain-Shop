@@ -5,6 +5,7 @@ import NavBar from './Navbar'
 import HomePage from './HomePage'
 import Products from './Products'
 import AboutUs from './AboutUs'
+import Footer from './Footer'
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <HomePage />
       <Products />
       <AboutUs />
+      <Footer />
     </div>
   );
 }
