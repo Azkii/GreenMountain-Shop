@@ -20,6 +20,7 @@
     }
     .aboutUs-Background h1 {
         font-size: 45px;
+        text-align: center;
     }
     .aboutUs-Title {
         font-size: 15px;
@@ -50,10 +51,31 @@
     .contactUs-ContentText {
         display: none;
     }
-    .contactUs-ContactOption {
+    .contactUs-ContactOptions {
         text-align: left;
         width: 80%;
         margin: auto;
+    }
+    /*Footer section*/
+    .footer-DescSection {
+        justify-content: space-around;
+    }
+    .footer-DescAboutUs {
+        display: none;
+    }
+    .footer-DescLinks {
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .footer-DescLinks img {
+        margin-top: 10px;
+    }
+    .footer-DescText {
+        flex: 4;
+    }
+    .footer-LinkSections {
+        margin-top: 50px;
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 1024px) {
