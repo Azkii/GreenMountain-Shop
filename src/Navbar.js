@@ -2,6 +2,7 @@ import React from 'react'
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu'
 function NavBar(props) {
     return (
+        <div className="dummyNavbar-Container">
         <nav className="page-NavBar">
             <h1 className="logo-Name">Green Mountain.</h1>
             {props.content.mobileSize ? ( 
@@ -11,6 +12,7 @@ function NavBar(props) {
                 <li className="navBar-Button navBar-products">Products.</li>
             </ul> ) : <HamburgerMenu  /> }
         </nav>
+        </div>
     )
 }
 export default NavBar

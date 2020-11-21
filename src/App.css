@@ -5,7 +5,15 @@
     font-family: Poppins, sans-serif;
 }
 /*Header section*/
+.dummyNavbar-Container {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    border-bottom: solid #36655307 2px;
+}
 .page-NavBar {
+    z-index: 100;
     align-items: center;
     margin: auto;
     width: 80%;
@@ -13,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-    border-bottom: solid #36655313 2px;
 }
 .logo-Name {
     color: #366553;
@@ -60,7 +67,7 @@
       top: 100px;
       left: 0%;
       width: 0%;
-      height: 600px;
+      height: calc(100% - 100px);
       display: flex;
       flex-direction: column;
       background-color: #4e6d61;
@@ -78,7 +85,7 @@
       font-weight: lighter;
   }
   .hamburgerMenu-optionsTransition {
-      width: 50%;
+      width: 100%;
       transition: ease-in 0.4s;
   }
   .hamburgerMenu-optionTransition {
@@ -92,7 +99,7 @@
     flex-direction: column;
 }
 .home-Container {
-    padding-top: 50px;
+    padding-top: 150px;
     display: flex;
     width: 80%;
     margin: auto;

@@ -33,7 +33,7 @@ function ContactUs(props) {
                             SAY SOMETHING
                         </h4>
                         <input type="text" className="contactUs-InputInfo" placeholder="Your name."></input>
-                        <input type="text" className="contactUs-InputInfo" placeholder="Your email."></input>
+                        <input type="email" name="email" className="contactUs-InputInfo" placeholder="Your email."></input>
                         <textarea className="contactUs-InputMessage" placeholder="Message..."></textarea>
                         <button>SEND</button>
                     </div>

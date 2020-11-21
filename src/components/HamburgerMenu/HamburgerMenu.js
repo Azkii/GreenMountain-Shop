@@ -3,7 +3,7 @@ function HamburgerMenu() {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)
     return (
-        <article>
+        <article className="hamburger-Circle">
             <div onClick={handleClick} className={click ? 'nochange' : 'change nochange' }>
                 <div className="bar1"></div>
                 <div className="bar2"></div>
