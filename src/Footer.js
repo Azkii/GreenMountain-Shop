@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="footer-ContainerDummy">
             <footer>
-                <h1>GREEN MOUNTAIN.</h1>
+                <h1>BLUE MOUNTAIN.</h1>
                 <div className="footer-DescSection">
                     <div className="footer-DescText">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ultricies mi. Curabitur in imperdiet nibh, eu pharetra risus. Sed eget molestie massa. Nunc ac aliquet ipsum. 

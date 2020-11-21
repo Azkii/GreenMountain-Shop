@@ -10,7 +10,7 @@
     position: fixed;
     background-color: rgb(255, 255, 255);
     z-index: 100;
-    border-bottom: solid #36655307 2px;
+    border-bottom: solid rgba(32, 64, 71, 0.027) 2px;
 }
 .page-NavBar {
     z-index: 100;
@@ -23,7 +23,7 @@
     font-size: 25px;
 }
 .logo-Name {
-    color: #366553;
+    color: rgb(49, 101, 112);
     flex: 1;
 }
 .navBar-Buttons {
@@ -40,7 +40,7 @@
     border: solid rgba(0, 0, 0, 0) 2px;
 }
 .navBar-products:hover {
-    border: solid #4d9b7d 2px;
+    border: solid rgb(49, 101, 112) 2px;
     border-radius: 5px;
     transition: ease-in 0.2s;
 }
@@ -48,7 +48,7 @@
  .nochange .bar1,.nochange .bar2,.nochange .bar3 {
     width: 40px;
     height: 4px;
-    background-color: #366553;
+    background-color: rgb(49, 101, 112);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -63,34 +63,47 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+  /*above ok*-----------------------------------------------------------------------------------------------------------------*/
   .hamburgerMenu-options {
       top: 100px;
       left: 0%;
-      width: 0%;
+      width: 100%;
       height: calc(100% - 100px);
-      display: flex;
-      flex-direction: column;
-      background-color: #4e6d61;
+      background-color: rgb(255, 255, 255);
       position: fixed;
       z-index: 100;
       list-style: none;
-      text-align: center;
-      justify-content: flex-start;
-      transition: ease-out 0.4s;
-      color: white;
-  }
-  .hamburgerMenu-option {
-      opacity: 0;
-      margin-top: 50px;
-      font-weight: lighter;
+      color: rgb(36, 68, 75);
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
   }
   .hamburgerMenu-optionsTransition {
-      width: 100%;
+      display: flex;
       transition: ease-in 0.4s;
   }
-  .hamburgerMenu-optionTransition {
-    transition-delay: 0.5s;
-    transition-duration: 0.3s;
+  /*below ok for now---------------------------------------------------------------------------------------------------------------*/
+  .hamburgerMenu-option {
+      cursor: pointer;
+      font-size: 30px;
+      margin-top: 80px;
+  }
+  .hamburger-iconsList {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      width: 80%;
+      margin: auto;
+  }
+  .hamburger-iconsList li img {
+      width: 40px;
+      cursor: pointer;
+      opacity: 0.9;
+  }
+  .hamburger-iconsList li img:hover {
       opacity: 1;
   }
 /*Home page*/
