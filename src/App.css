@@ -248,6 +248,7 @@
     align-items: center;
     width: 80%;
     margin: auto;
+    padding-bottom: 200px;
 }
 .aboutUs-ContentBox h2 {
     padding-top: 50px;
@@ -280,7 +281,9 @@ footer {
     color: rgb(228, 228, 228);
 }
 footer h1 {
-    margin-bottom: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: solid white 2px;
 }
 .footer-DescSection {
     font-size: 18px;
@@ -309,6 +312,7 @@ footer h1 {
     justify-content: space-evenly;
 }
 .footer-DescLinks img {
+    cursor: pointer;
     opacity: 0.8;
     width: 30px;
 }
@@ -323,4 +327,11 @@ footer h1 {
     font-size: 20px;
     font-weight: bold;
     justify-content: space-evenly;
+}
+.footer-LinkSections li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.footer-LinkSections li:hover {
+    opacity: 1;
 }

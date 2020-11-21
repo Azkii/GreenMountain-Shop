@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactUs from './components/ContactUs/ContactUs'
-function AboutUs() {
+function AboutUs(props) {
     return (
         <article className="aboutUsContainer">
             <div className="aboutUs-Title">
@@ -22,7 +22,7 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
-            <ContactUs />
+            <ContactUs content= {{mobileSize : props.content.mobileSize }} />
         </article>
     )
 }

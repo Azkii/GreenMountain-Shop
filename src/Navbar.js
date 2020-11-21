@@ -1,21 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu'
-function NavBar() {
-    const [showBurger, setBurger] = useState(true);
-    const showNavBarMenu = () => {
-        if (window.innerWidth <= 1000) {
-            setBurger(false)
-        }
-        else {
-            setBurger(true)
-        }
-    }
-    window.addEventListener('load', showNavBarMenu);
-    window.addEventListener('resize', showNavBarMenu);
+function NavBar(props) {
     return (
         <nav className="page-NavBar">
             <h1 className="logo-Name">Green Mountain.</h1>
-            {showBurger ? ( 
+            {props.content.mobileSize ? ( 
             <ul className="navBar-Buttons">
                 <li className="navBar-Button">Home.</li>
                 <li className="navBar-Button">About us.</li>

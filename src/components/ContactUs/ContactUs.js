@@ -3,7 +3,7 @@ import './ContactUs.css'
 import IconMail from '../../Photos/icons/mail.svg'
 import IconMapMark from '../../Photos/icons/mapMark.svg'
 import IconPhone from '../../Photos/icons/phone.svg'
-function ContactUs() {
+function ContactUs(props) {
     return (
         <div className="contactUs-Container">
             <div className="contactUs-ContentBox">
@@ -26,17 +26,19 @@ function ContactUs() {
                     </li>
                 </ul>
             </div>
-            <div className="contactUs-Form">
-                <div>
-                    <h4>
-                        SAY SOMETHING
-                    </h4>
-                    <input type="text" className="contactUs-InputInfo" placeholder="Your name."></input>
-                    <input type="text" className="contactUs-InputInfo" placeholder="Your email."></input>
-                    <textarea className="contactUs-InputMessage" placeholder="Message..."></textarea>
-                    <button>SEND</button>
+            {props.content.mobileSize ? (
+                <div className="contactUs-Form">
+                    <div>
+                        <h4>
+                            SAY SOMETHING
+                        </h4>
+                        <input type="text" className="contactUs-InputInfo" placeholder="Your name."></input>
+                        <input type="text" className="contactUs-InputInfo" placeholder="Your email."></input>
+                        <textarea className="contactUs-InputMessage" placeholder="Message..."></textarea>
+                        <button>SEND</button>
+                    </div>
                 </div>
-            </div>
+            ) : "" }
         </div>
     )
 }
