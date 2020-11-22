@@ -14,6 +14,7 @@ function App() {
       }
       else {
           setBurger(true)
+          document.body.style.overflow = ""
       }
   }
   window.addEventListener('load', showNavBarMenu);

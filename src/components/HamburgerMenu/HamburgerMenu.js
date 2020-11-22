@@ -3,8 +3,19 @@ import iconFacebook from '../../Photos/icons/facebookBlack.svg'
 import iconTwitter from '../../Photos/icons/twitterBlack.svg'
 import iconYoutube from '../../Photos/icons/youtubeBlack.svg'
 function HamburgerMenu() {
+    const [adam, setAdam] = useState(true)
     const [click, setClick] = useState(true)
-    const handleClick = () => setClick(!click)
+    const handleClick = () => {
+        setClick(!click)
+        if (click === true) {
+            document.body.style.overflow = "hidden"
+            setTimeout(function(){ setAdam(!adam) }, 0)
+        }
+        else if (click === false) {
+            document.body.style.overflow = ""
+            setTimeout(function(){ setAdam(!adam) }, 0)
+        }
+    }
     return (
         <article>
             <div onClick={handleClick} className={click ? 'nochange' : 'change nochange' }>
@@ -13,10 +24,10 @@ function HamburgerMenu() {
                 <div className="bar3"></div>
             </div>
                 <div className={ click ? 'hamburgerMenu-options' : 'hamburgerMenu-options hamburgerMenu-optionsTransition'}>
-                    <div className={ click ? "hamburgerMenu-option" : "hamburgerMenu-option" }>Home</div>
-                    <div className={ click ? "hamburgerMenu-option" : "hamburgerMenu-option" }>About us</div>
-                    <div className={ click ? "hamburgerMenu-option" : "hamburgerMenu-option" }>Products</div>
-                    <ul className="hamburger-iconsList">
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>Home</div>
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>About us</div>
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>Products</div>
+                    <ul className={ adam ? "hamburger-iconsList" : "hamburger-iconsList hamburger-iconsListTransition"}>
                         <li><img src={iconFacebook}></img></li>
                         <li><img src={iconTwitter}></img></li>
                         <li><img src={iconYoutube}></img></li>
