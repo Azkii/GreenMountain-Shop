@@ -71,7 +71,6 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
-  /*above ok*-----------------------------------------------------------------------------------------------------------------*/
   .hamburgerMenu-options {
       top: 100px;
       left: 0%;
@@ -90,7 +89,6 @@
   .hamburgerMenu-optionsTransition {
       display: flex;
   }
-  /*below ok for now---------------------------------------------------------------------------------------------------------------*/
   .hamburgerMenu-option {
       cursor: pointer;
       font-size: 30px;
@@ -124,88 +122,30 @@
   .hamburger-iconsList li img:hover {
       opacity: 1;
   }
-/*Home page*/
-.home-Container {
-    padding-top: 150px;
+/*Home page----------------------------------------------------*/
+.homePage {
     display: flex;
-    width: 80%;
-    margin: auto;
+    padding-top: 100px;
 }
-.home-box1 {
-    color: #191a21;
-    background-color: #61955c;
+.homePage-Text {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 67%;
-    height: 600px;
-    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 64, 71);
 }
-.home-box2 {
-    background-image: url(/src/Photos/1.jpg);
-    background-repeat: repeat-y;
-    background-position: -160px;
-    width: 33%;
-}
-.home-Title {
-    margin-left: 10%;
-    text-align: left;
-    width: 80%;
-}
-.home-Title h3 {
-    font-size: 30px;
-    margin: 0px 0px 10px 0px;
-}
-.home-Title h1 {
-    font-size: 50px;
-}
-.home-content {
-    margin-left: 10%;
-    width: 80%;
-    text-align: left;
-}
-.home-content p {
-    line-height: 35px; 
-    font-size: 25px;
-}
-.home-content button {
-    font-size: 20px;
-    font-weight: bolder;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    color: #547436;
-    width: 180px;
-    height: 40px;
-    margin-top: 25px;
-}
-/*home text*/
-.home-text {
-    padding-top: 50px;
-    width: 70%;
-    margin: auto;
+.homePage-PhotoSection {
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    max-height: 800px;
+    justify-content: flex-end;
+    background-image: url(./Photos/teaHome.jpg);
 }
-.home-text h3 {
-    font-size: 20px;
-    opacity: 0.4;
-    font-weight: lighter;
-}
-.home-text h1 {
-    margin-top: 25px;
-    opacity: 0.8;
-}
-.home-textDesciption {
-    margin-top: 25px;
-    font-size: 18px;
-    width: 60%;
-    margin-left: 20%;
-}
-/*Products section*/
+/*Products section----------------------------------------------*/
 .products-container {
     padding-top: 100px;
     text-align: center;
