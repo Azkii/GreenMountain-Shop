@@ -65,14 +65,14 @@
     letter-spacing: 2px;
 }
 .contactUs-InputInfo {
-    border: solid #193439 2px;
+    border: solid #276069 2px;
     height: 30px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 17px;
 }
 .contactUs-InputMessage {
-    border: solid #503143 2px;
+    border: solid #276069 2px;
     resize: none;
     padding-top: 10px;
     padding-left: 20px;
@@ -82,7 +82,7 @@
 }
 .contactUs-Form div button {
     height: 35px;
-    background-color: #442b39;
+    background-color: #276069;
     border: none;
     font-size: 20px;
     letter-spacing: 1px;
