@@ -1,18 +1,7 @@
 @media only screen and (max-width: 1000px) {
-    .home-box2 {
-        display: none;
-    }
-    .home-box1 {
-        width: 100%;
-    }
-    .home-Title h3 {
-        font-size: 20px;
-    }
-    .home-Title h1 {
-        font-size: 35px;
-    }
-    .home-content p {
-        font-size: 20px;
+    .homePage-PhotoSection {
+        align-items: center;
+        justify-content: center;
     }
     /*about us section*/
     .aboutUs-Background {

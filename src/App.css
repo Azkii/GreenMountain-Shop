@@ -126,24 +126,42 @@
 .homePage {
     display: flex;
     padding-top: 100px;
+    color: #193439;
+}
+.homePage-PhotoSection {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(./Photos/teaHome.png);
 }
 .homePage-Text {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(32, 64, 71);
+    justify-content: space-around;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 300px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.876);
+    padding: 25px 25px 25px 50px;
 }
-.homePage-PhotoSection {
-    width: 50%;
-    height: calc(100vh - 100px);
-    background-repeat: no-repeat;
-    background-position: center 0px;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    background-image: url(./Photos/teaHome.jpg);
+.homePage-Text p {
+    width: 80%;
+}
+.homePage-Text button {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    background-color: #193439;
+    color: rgba(255, 255, 255, 0.931);
+    border: none;
+    border-radius: 5px;
 }
 /*Products section----------------------------------------------*/
 .products-container {
@@ -244,7 +262,7 @@
 }
 /*Footer section*/
 .footer-ContainerDummy {
-    background-color: rgb(32, 64, 71);
+    background-color: #43808a;
 }
 footer {
     padding-top: 100px;
@@ -252,7 +270,7 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: column;
-    color: rgb(228, 228, 228);
+    color: rgb(255, 255, 255);
 }
 footer h1 {
     padding-bottom: 5px;
