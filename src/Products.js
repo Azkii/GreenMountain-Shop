@@ -15,6 +15,7 @@ class Products extends React.Component {
             catGreenTea: false,
             catOolongTea: false,
             catWhiteTea: false,
+            sortByName: false,
             fromLowest: false,
             fromHighest: false,
         }
@@ -25,6 +26,9 @@ class Products extends React.Component {
         this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
         this.categoriesByTypeWhite = this.categoriesByTypeWhite.bind(this)
         this.showButton = <ShowMore content={{showMore: this.showMore}} />
+        //sort by name
+        this.sortValueByName = this.sortValueByName.bind(this)
+        //sort by price
         this.sortValueLowest = this.sortValueLowest.bind(this)
         this.sortValueHighest = this.sortValueHighest.bind(this)
     }
@@ -122,6 +126,25 @@ class Products extends React.Component {
             })
         }
     }
+    //Sort value by Name
+    sortValueByName() {
+        if (this.state.sortByName === false) {
+            this.setState(() => {
+                return {
+                    sortByName: true,
+                    fromHighest: false,
+                    fromLowest: false,
+                }
+            })
+        }
+        else {
+            this.setState(() => {
+                return {
+                    sortByName: false,
+                }
+            })
+        }
+    }
     //Sort value by price
     sortValueLowest() {
         if (this.state.fromLowest === false) {
@@ -129,6 +152,7 @@ class Products extends React.Component {
                 return {
                     fromLowest: true,
                     fromHighest: false,
+                    sortByName: false,
                 }
             })
         }
@@ -146,6 +170,7 @@ class Products extends React.Component {
                 return {
                     fromHighest: true,
                     fromLowest: false,
+                    sortByName: false,
                 }
             })
         }
@@ -174,7 +199,14 @@ class Products extends React.Component {
         let ProductListSliced = ProductList.slice(0, this.state.kotek / this.state.sliced)
         window.addEventListener('load', this.sliced)
         window.addEventListener('resize', this.sliced)
-
+        //sort by name
+        if (this.state.sortByName === true) {
+            ProductListSliced = ProductListSliced.sort(function(a, b) {
+                if(a.props.product.name.toLowerCase() < b.props.product.name.toLowerCase()) return -1;
+                if(a.props.product.name.toLowerCase() > b.props.product.name.toLowerCase()) return 1;
+                return 0;
+               })
+        }
         //sort by value
         if (this.state.fromLowest === true) {
             ProductListSliced = ProductListSliced.sort(function(a ,b) {
@@ -200,6 +232,8 @@ class Products extends React.Component {
                                 catOolongTea: this.state.catOolongTea,
                                 categoriesByTypeWhite: this.categoriesByTypeWhite,
                                 catWhiteTea: this.state.catWhiteTea,
+                                sortValueByName: this.sortValueByName,
+                                sortByName: this.state.sortByName,
                                 sortValueLowest: this.sortValueLowest,
                                 fromLowest: this.state.fromLowest,
                                 sortValueHighest: this.sortValueHighest,

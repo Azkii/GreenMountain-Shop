@@ -1,7 +1,7 @@
 const ProductsDataBase = [
     {
         id: "1",
-        name: "black tea",
+        name: "Cblack tea",
         type: "black-tea",
         price: [1, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
@@ -9,7 +9,7 @@ const ProductsDataBase = [
     },
     {
         id: "2",
-        name: "green tea",
+        name: "Agreen tea",
         type: "green-tea",
         price: [49, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
@@ -17,7 +17,7 @@ const ProductsDataBase = [
     },
     {
         id: "3",
-        name: "Oolong tea",
+        name: "BOolong tea",
         type: "oolong-tea",
         price: [130, 150, 200],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",

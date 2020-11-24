@@ -28,7 +28,7 @@ function Categories(props) {
                     <div onClick={handleClick2} className={click2 ? "categories-plus" : "categories-plus categories-plusTransition"}>+</div>
                 </div>
                 <div className={click2 ? "show-Dummy" : "filterby-Box" } >
-                    <div className="filterby-Name">
+                    <div className={props.content.sortByName ? "filterby-Name filter-PriceClicked" : "filterby-Name"} onClick={props.content.sortValueByName}>
                         Name A-Z
                     </div>
                     <div className="filterby-price">
