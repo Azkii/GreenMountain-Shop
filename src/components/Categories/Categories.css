@@ -78,13 +78,16 @@
     font-size: 30px;
     margin-bottom: 25px;
 }
-.filterby-price div {
+.filter-PriceButton {
     cursor: pointer;
     opacity: 0.5;
     font-size: 20px;
     margin-top: 10px;
     text-align: left;
 }
-.filterby-price div:hover {
+.filter-PriceClicked {
+    opacity: 1;
+}
+.filter-PriceButton:hover {
     opacity: 0.8;
 }

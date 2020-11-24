@@ -128,6 +128,7 @@ class Products extends React.Component {
             this.setState(prevState => {
                 return {
                     fromLowest: true,
+                    fromHighest: false,
                 }
             })
         }
@@ -144,6 +145,7 @@ class Products extends React.Component {
             this.setState(prevState => {
                 return {
                     fromHighest: true,
+                    fromLowest: false,
                 }
             })
         }
@@ -199,7 +201,9 @@ class Products extends React.Component {
                                 categoriesByTypeWhite: this.categoriesByTypeWhite,
                                 catWhiteTea: this.state.catWhiteTea,
                                 sortValueLowest: this.sortValueLowest,
+                                fromLowest: this.state.fromLowest,
                                 sortValueHighest: this.sortValueHighest,
+                                fromHighest: this.state.fromHighest,
                             }}/>
                     </div>
                     <div className="products-list">

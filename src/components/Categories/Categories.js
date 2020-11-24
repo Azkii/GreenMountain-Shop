@@ -33,10 +33,10 @@ function Categories(props) {
                     </div>
                     <div className="filterby-price">
                         <p>Price</p>
-                        <div onClick={props.content.sortValueLowest}>
+                        <div className={props.content.fromLowest ?  "filter-PriceButton filter-PriceClicked" : "filter-PriceButton"} onClick={props.content.sortValueLowest} >
                             from lowest
                         </div>
-                        <div onClick={props.content.sortValueHighest}>
+                        <div className={props.content.fromHighest ? "filter-PriceButton filter-PriceClicked" : "filter-PriceButton"} onClick={props.content.sortValueHighest} >
                             from highest
                         </div>
                     </div>
