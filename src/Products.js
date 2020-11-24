@@ -16,6 +16,7 @@ class Products extends React.Component {
             catOolongTea: false,
             catWhiteTea: false,
             fromLowest: false,
+            fromHighest: false,
         }
         this.showMore = this.showMore.bind(this)
         this.sliced = this.sliced.bind(this)
@@ -24,10 +25,8 @@ class Products extends React.Component {
         this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
         this.categoriesByTypeWhite = this.categoriesByTypeWhite.bind(this)
         this.showButton = <ShowMore content={{showMore: this.showMore}} />
-        this.sortValue = this.sortValue.bind(this)
-    }
-    componentDidMount() {
-        console.log("xd")
+        this.sortValueLowest = this.sortValueLowest.bind(this)
+        this.sortValueHighest = this.sortValueHighest.bind(this)
     }
     showMore() {
         this.setState(prevState => {
@@ -123,7 +122,8 @@ class Products extends React.Component {
             })
         }
     }
-    sortValue() {
+    //Sort value by price
+    sortValueLowest() {
         if (this.state.fromLowest === false) {
             this.setState(prevState => {
                 return {
@@ -135,6 +135,22 @@ class Products extends React.Component {
             this.setState(prevState => {
                 return {
                     fromLowest: false,
+                }
+            })
+        }
+    }
+    sortValueHighest() {
+        if (this.state.fromHighest === false) {
+            this.setState(prevState => {
+                return {
+                    fromHighest: true,
+                }
+            })
+        }
+        else {
+            this.setState(prevState => {
+                return {
+                    fromHighest: false,
                 }
             })
         }
@@ -163,6 +179,11 @@ class Products extends React.Component {
                     return a.props.product.price[0] - b.props.product.price[0]
                 })
         }
+        if (this.state.fromHighest === true) {
+            ProductListSliced = ProductListSliced.sort(function(a ,b) {
+                    return b.props.product.price[0] - a.props.product.price[0]
+                })
+        }
         return (
             <div className="products-container">
                 <div className="products-boxFlex">
@@ -177,7 +198,8 @@ class Products extends React.Component {
                                 catOolongTea: this.state.catOolongTea,
                                 categoriesByTypeWhite: this.categoriesByTypeWhite,
                                 catWhiteTea: this.state.catWhiteTea,
-                                sortValue: this.sortValue,
+                                sortValueLowest: this.sortValueLowest,
+                                sortValueHighest: this.sortValueHighest,
                             }}/>
                     </div>
                     <div className="products-list">

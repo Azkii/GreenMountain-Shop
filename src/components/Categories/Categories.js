@@ -33,10 +33,10 @@ function Categories(props) {
                     </div>
                     <div className="filterby-price">
                         <p>Price</p>
-                        <div onClick={props.content.sortValue}>
+                        <div onClick={props.content.sortValueLowest}>
                             from lowest
                         </div>
-                        <div>
+                        <div onClick={props.content.sortValueHighest}>
                             from highest
                         </div>
                     </div>
