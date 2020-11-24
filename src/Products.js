@@ -15,6 +15,7 @@ class Products extends React.Component {
             catGreenTea: false,
             catOolongTea: false,
             catWhiteTea: false,
+            fromLowest: false,
         }
         this.showMore = this.showMore.bind(this)
         this.sliced = this.sliced.bind(this)
@@ -23,6 +24,10 @@ class Products extends React.Component {
         this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
         this.categoriesByTypeWhite = this.categoriesByTypeWhite.bind(this)
         this.showButton = <ShowMore content={{showMore: this.showMore}} />
+        this.sortValue = this.sortValue.bind(this)
+    }
+    componentDidMount() {
+        console.log("xd")
     }
     showMore() {
         this.setState(prevState => {
@@ -56,9 +61,9 @@ class Products extends React.Component {
 //sort seperate categiores
     categoriesByTypeBlack() {
         if (this.state.catBlackTea === false) {
-            this.setState(() => {
+            this.setState(prevState => {
                 return {
-                    catBlackTea: true
+                    catBlackTea: true,
                 }
             })
         }
@@ -72,9 +77,9 @@ class Products extends React.Component {
     }
     categoriesByTypeGreen() {
         if (this.state.catGreenTea === false) {
-            this.setState(() => {
+            this.setState(prevState => {
                 return {
-                    catGreenTea: true
+                    catGreenTea: true,
                 }
             })
         }
@@ -88,9 +93,9 @@ class Products extends React.Component {
     }
     categoriesByTypeOolong() {
         if (this.state.catOolongTea === false) {
-            this.setState(() => {
+            this.setState(prevState => {
                 return {
-                    catOolongTea: true
+                    catOolongTea: true,
                 }
             })
         }
@@ -104,16 +109,32 @@ class Products extends React.Component {
     }
     categoriesByTypeWhite() {
         if (this.state.catWhiteTea === false) {
-            this.setState(() => {
+            this.setState(prevState => {
                 return {
-                    catWhiteTea: true
+                    catWhiteTea: true,
                 }
             })
         }
         else {
-            this.setState(() => {
+            this.setState(prevState => {
                 return {
-                    catWhiteTea: false
+                    catWhiteTea: false,
+                }
+            })
+        }
+    }
+    sortValue() {
+        if (this.state.fromLowest === false) {
+            this.setState(prevState => {
+                return {
+                    fromLowest: true,
+                }
+            })
+        }
+        else {
+            this.setState(prevState => {
+                return {
+                    fromLowest: false,
                 }
             })
         }
@@ -135,14 +156,13 @@ class Products extends React.Component {
         let ProductListSliced = ProductList.slice(0, this.state.kotek / this.state.sliced)
         window.addEventListener('load', this.sliced)
         window.addEventListener('resize', this.sliced)
-        //sort by value do dokonczenia
-        function sortValue() {
-            ProductListSliced.sort(function(a ,b) {
-                console.log(b.props.product.price[0])
-                return a.props.product.price[0] - b.props.product.price[0]
-            })
+
+        //sort by value
+        if (this.state.fromLowest === true) {
+            ProductListSliced = ProductListSliced.sort(function(a ,b) {
+                    return a.props.product.price[0] - b.props.product.price[0]
+                })
         }
-        //Do dokonczenia sortuje ale nie wykonuje, brakuje useEffect
         return (
             <div className="products-container">
                 <div className="products-boxFlex">
@@ -157,6 +177,7 @@ class Products extends React.Component {
                                 catOolongTea: this.state.catOolongTea,
                                 categoriesByTypeWhite: this.categoriesByTypeWhite,
                                 catWhiteTea: this.state.catWhiteTea,
+                                sortValue: this.sortValue,
                             }}/>
                     </div>
                     <div className="products-list">

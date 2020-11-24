@@ -6,7 +6,6 @@ function Categories(props) {
     const handleClick = () => setClick(!click)
     const [click2, setClick2] = useState(true)
     const handleClick2 = () => setClick2(!click2)
-
     return (
         <div className="categories-container">
             <div className="categories-box">
@@ -34,7 +33,7 @@ function Categories(props) {
                     </div>
                     <div className="filterby-price">
                         <p>Price</p>
-                        <div>
+                        <div onClick={props.content.sortValue}>
                             from lowest
                         </div>
                         <div>
