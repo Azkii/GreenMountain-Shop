@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import {Link} from 'react-router-dom'
 import './Product.css'
 function Product(props) {
     const [click, setClick] = useState(true)
@@ -11,9 +12,11 @@ function Product(props) {
                             <p className="product-price">{props.product.price[0]}$~{props.product.price[2]}$</p>
                             {click ? "" : ( 
                                 <div className={click ? "HoverDetails" : "HoverDetails HoverDetails2"}>
-                                    <button className="hoverDetails-Discover">
-                                        Discover
-                                    </button>
+                                    <Link to={`/product/${props.product.name + props.product.id}`}>
+                                        <button className="hoverDetails-Discover">
+                                            Discover
+                                        </button>
+                                    </Link>
                                     <button className="hoverDetails-Checkout">
                                         ADD TO CARD
                                     </button>

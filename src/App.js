@@ -6,25 +6,16 @@ import HomePage from './HomePage'
 import Products from './Products'
 import AboutUs from './AboutUs'
 import Footer from './Footer'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
-  const [showBurger, setBurger] = useState(true);
-  const showNavBarMenu = () => {
-      if (window.innerWidth <= 1000) {
-          setBurger(false)
-      }
-      else {
-          setBurger(true)
-          document.body.style.overflow = ""
-      }
-  }
-  window.addEventListener('load', showNavBarMenu);
-  window.addEventListener('resize', showNavBarMenu);
   return (
     <div className="App">
-      <NavBar content={{mobileSize : showBurger}} />
-      <HomePage />
-      <Products />
-      <AboutUs content={{mobileSize : showBurger}} />
+      <NavBar />
+      <Route path="/" exact >
+        <HomePage />
+        <Products />
+        <AboutUs />
+      </Route>
       <Footer />
     </div>
   );
