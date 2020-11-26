@@ -1,7 +1,7 @@
 import React from 'react'
-function HomePage() {
+function HomePage(props) {
     return (
-        <div className="homePage">
+        <div className="homePage" ref={props.content.HomePageRef}>
             <div className="homePage-PhotoSection">
                 <div className="homePage-Text">
                     <h1>Try Out our new Bubble tea</h1>

@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu'
-import HomePage from './HomePage';
 function NavBar(props) {
     const [showBurger, setBurger] = useState(true);
     const showNavBarMenu = () => {
@@ -21,7 +20,7 @@ function NavBar(props) {
             <h1 className="logo-Name">Blue Mountain.</h1>
             {showBurger ? ( 
             <ul className="navBar-Buttons">
-                <li className="navBar-Button">Home.</li>
+                <li className="navBar-Button" onClick={props.content.scrollToHomePage}>Home.</li>
                 <li className="navBar-Button">About us.</li>
                 <li className="navBar-Button navBar-products">Products.</li>
             </ul> ) : <HamburgerMenu  /> }
