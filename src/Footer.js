@@ -2,7 +2,7 @@ import React from 'react'
 import iconFacebook from './Photos/icons/facebook.svg'
 import iconTwitter from './Photos/icons/twitter.svg'
 import iconYoutube from './Photos/icons/youtube.svg'
-function Footer() {
+function Footer(props) {
     return (
         <div className="footer-ContainerDummy">
             <footer>
@@ -22,8 +22,8 @@ function Footer() {
                     </div>
                 </div>
                     <ul className="footer-LinkSections">
-                        <li>Home.</li>
-                        <li>Products.</li>
+                        <li onClick={props.content.scrollToHomePage}>Home.</li>
+                        <li onClick={props.content.scrollToProducts}>Products.</li>
                         <li>ContactUs.</li>
                         <li>F.A.Q.</li>
                     </ul>

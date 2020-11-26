@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import iconFacebook from '../../Photos/icons/facebookBlack.svg'
 import iconTwitter from '../../Photos/icons/twitterBlack.svg'
 import iconYoutube from '../../Photos/icons/youtubeBlack.svg'
-function HamburgerMenu() {
+function HamburgerMenu(props) {
     const [adam, setAdam] = useState(true)
     const [click, setClick] = useState(true)
     const handleClick = () => {
@@ -24,9 +24,9 @@ function HamburgerMenu() {
                 <div className="bar3"></div>
             </div>
                 <div className={ click ? 'hamburgerMenu-options' : 'hamburgerMenu-options hamburgerMenu-optionsTransition'}>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>Home</div>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>About us</div>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" }>Products</div>
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToHomePage} >Home</div>
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToAboutUs} >About us</div>
+                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToProducts} >Products</div>
                     <ul className={ adam ? "hamburger-iconsList" : "hamburger-iconsList hamburger-iconsListTransition"}>
                         <li><img src={iconFacebook}></img></li>
                         <li><img src={iconTwitter}></img></li>

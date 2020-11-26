@@ -25,10 +25,15 @@ function App() {
       />
       <Route path="/" exact >
         <HomePage content={{HomePageRef : HomePageRef}}/>
-        <Products />
-        <AboutUs />
+        <Products content={{ProductsRef : ProductsRef}} />
+        <AboutUs content={{AboutUsRef : AboutUsRef}}/>
       </Route>
-      <Footer />
+      <Footer
+        content={{
+          scrollToHomePage : scrollToHomePage,
+          scrollToProducts : scrollToProducts,
+        }} 
+      />
     </div>
   );
 }

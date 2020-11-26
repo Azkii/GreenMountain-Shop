@@ -79,7 +79,7 @@ html {
       top: 90px;
       left: 0%;
       width: 100%;
-      height: calc(100% - 100px);
+      height: calc(100% - 90px);
       background-color: rgb(255, 255, 255);
       position: fixed;
       z-index: 100;

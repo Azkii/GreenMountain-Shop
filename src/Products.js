@@ -183,7 +183,7 @@ class Products extends React.Component {
         }
     }
 //end of it
-    render() {
+    render(props) {
         const ProductList = ProductsDataBase.map(product =>
             <Product
                 key={product.id}
@@ -219,7 +219,7 @@ class Products extends React.Component {
                 })
         }
         return (
-            <div className="products-container">
+            <div className="products-container" ref={this.props.content.ProductsRef}>
                 <div className="products-boxFlex">
                     <div className="products-categories">
                         <Categories 

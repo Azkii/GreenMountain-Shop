@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import ContactUs from './components/ContactUs/ContactUs'
-function AboutUs() {
+function AboutUs(props) {
     const [showBurger, setBurger] = useState(true);
     const showNavBarMenu = () => {
         if (window.innerWidth <= 1000) {
@@ -13,7 +13,7 @@ function AboutUs() {
     window.addEventListener('load', showNavBarMenu);
     window.addEventListener('resize', showNavBarMenu);
     return (
-        <article className="aboutUsContainer">
+        <article className="aboutUsContainer" ref={props.content.AboutUsRef}>
             <div className="aboutUs-Title">
                 <p>OUR CAMPANY.</p>
                 <p>|</p>
