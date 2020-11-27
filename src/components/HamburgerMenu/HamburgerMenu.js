@@ -3,17 +3,17 @@ import iconFacebook from '../../Photos/icons/facebookBlack.svg'
 import iconTwitter from '../../Photos/icons/twitterBlack.svg'
 import iconYoutube from '../../Photos/icons/youtubeBlack.svg'
 function HamburgerMenu(props) {
-    const [adam, setAdam] = useState(true)
+    const [animateNav, setanimateNav] = useState(true)
     const [click, setClick] = useState(true)
     const handleClick = () => {
         setClick(!click)
         if (click === true) {
             document.body.style.overflow = "hidden"
-            setTimeout(function(){ setAdam(!adam) }, 0)
+            setTimeout(function(){ setanimateNav(!animateNav) }, 0)
         }
         else if (click === false) {
             document.body.style.overflow = ""
-            setTimeout(function(){ setAdam(!adam) }, 0)
+            setTimeout(function(){ setanimateNav(!animateNav) }, 0)
         }
     }
     return (
@@ -24,13 +24,13 @@ function HamburgerMenu(props) {
                 <div className="bar3"></div>
             </div>
                 <div className={ click ? 'hamburgerMenu-options' : 'hamburgerMenu-options hamburgerMenu-optionsTransition'}>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToHomePage} >Home</div>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToAboutUs} >About us</div>
-                    <div className={ adam ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={props.content.scrollToProducts} >Products</div>
-                    <ul className={ adam ? "hamburger-iconsList" : "hamburger-iconsList hamburger-iconsListTransition"}>
-                        <li><img src={iconFacebook}></img></li>
-                        <li><img src={iconTwitter}></img></li>
-                        <li><img src={iconYoutube}></img></li>
+                    <div className={ animateNav ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={ () => {props.content.scrollToHomePage(); handleClick() }} >Home</div>
+                    <div className={ animateNav ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={ () => {props.content.scrollToAboutUs(); handleClick() }} >About us</div>
+                    <div className={ animateNav ? "hamburgerMenu-option" : "hamburgerMenu-option hamburgerMenu-optionTransition" } onClick={ () => {props.content.scrollToProducts(); handleClick() }} >Products</div>
+                    <ul className={ animateNav ? "hamburger-iconsList" : "hamburger-iconsList hamburger-iconsListTransition"}>
+                        <li><img src={iconFacebook} alt="facebook-icon"></img></li>
+                        <li><img src={iconTwitter} alt="twitter-icon"></img></li>
+                        <li><img src={iconYoutube} alt="youtube-icon"></img></li>
                     </ul>
                 </div>
         </article>
