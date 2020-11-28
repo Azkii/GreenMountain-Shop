@@ -11,9 +11,61 @@ function ProductDetails(props) {
         content = ""
    }
     return (
-        <div>
-            {content}
-        </div>
+            <div className="productDetails-Box">
+                <div className="producDetails-Photos">
+                    <div className="productDetails-Gallery">
+                        <img src={props.product.image} alt="Green tea"></img>
+                        <img src={props.product.image} alt="Green tea"></img>
+                        <img src={props.product.image} alt="Green tea"></img>
+                    </div>
+                    <div className="productDetails-PhotoDis">
+                        <img src={props.product.image} alt="Green tea"></img>
+                    </div>
+                </div>
+                
+                <div className="producDetails-Content">
+                    <div className="producDetails-Rating" >
+                        <ul>
+                            <li> &#9733; </li>
+                            <li> &#9733; </li>
+                            <li> &#9733; </li>
+                            <li> &#9733; </li>
+                            <li> &#9733; </li>
+                        </ul>
+                        <p>(2 Reviews)</p>
+                    </div>
+                    <h1>Here is. {props.product.name} Name & Informations </h1>
+                    <p>Availability (In stock)</p>
+                    <div className="producDetails-PriceSection">
+                        <p>$ {props.product.price[0]}</p>
+                        <ul className="producDetails-Size">
+                            <li>S</li>
+                            <li>|</li>
+                            <li>M</li>
+                            <li>|</li>
+                            <li>B</li>
+                        </ul>
+                    </div>
+                    <ul className="producDetails-InfoOptions">
+                        <li>Product. Info.</li>
+                        <li>Reviews</li>
+                    </ul>
+                    <div className="producDetails-Info">
+                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsum
+                    </div>
+                    <div className="producDetails-Buttons">
+                        <div className="producDetails-QntButton">
+                            <p>Qnt</p>
+                            <ul>
+                                <li>-</li>
+                                <li>1</li>
+                                <li>+</li>
+                            </ul>
+                        </div>
+                        <button>Add to Cart.</button>
+                    </div>
+                </div>
+            </div>
     )
 }
 

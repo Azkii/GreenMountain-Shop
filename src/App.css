@@ -342,9 +342,87 @@ footer h1 {
 
 /*--------------------------in progress ----------------------------------------*/
 
-.productDetails-box {
-    background-color: rgb(124, 77, 77);
-    height: 100vh;
+.productDetails-Box {
+    padding-top: 5vh;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.producDetails-Photos {
+    background-color: rgb(117, 28, 28);
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.producDetails-Content {
+    background-color: rgb(36, 68, 75);
+    width: 50%;
+}
+.productDetails-PhotoDis {
+    display: flex;
+    align-items: center;
+}
+.productDetails-PhotoDis img{
+    width: 600px;
+}
+.productDetails-Gallery {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.productDetails-Gallery img {
+    width: 120px;
+    margin-bottom: 25px;
 }
 
+.producDetails-Rating {
+    background-color: rgb(43, 117, 105);
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.producDetails-Rating ul {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+.producDetails-Rating p {
+    margin-left: 5px;
+    font-size: 20px;
+}
+.producDetails-PriceSection {
+    background-color: rgb(151, 60, 60);
+    display: flex;
+    flex-direction: column;
+}
+.producDetails-PriceSection p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.producDetails-Size {
+    background-color: green;
+    list-style: none;
+    display: flex;
+}
+.producDetails-InfoOptions {
+    background-color: rgb(43, 117, 105);
+    list-style: none;
+    display: flex;
+}
+.producDetails-Buttons {
+    display: flex;
+}
+.producDetails-QntButton {
+    background-color: red;
+    display: flex;
+}
+.producDetails-QntButton ul {
+    display: flex;
+    list-style: none;
+}
 /*--------------------------in progress ----------------------------------------*/
