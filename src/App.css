@@ -449,21 +449,32 @@ footer h1 {
 .productDetails-PriceSection p {
     font-size: 40px;
     font-weight: bolder;
-    margin-right: 20px;
+    width: 120px;
 }
 .productDetails-Size {
     list-style: none;
     display: flex;
-    width: 100px;
-    justify-content: space-around;
+    width: 120px;
+    justify-content: space-evenly;
 }
 .productDetails-Size li {
     opacity: 0.8;
     font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .productDetails-SizeHover:hover {
     opacity: 1;
+}
+.productDetails-SizeHovered {
     cursor: pointer;
+    background-color: #41b1c2fa;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
 }
 .productDetails-InfoOptions {
     list-style: none;
