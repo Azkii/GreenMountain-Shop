@@ -333,19 +333,27 @@ footer h1 {
 
 
 
-
-
-
-
-
-
-
 /*--------------------------in progress ----------------------------------------*/
 .productDetails-MainContainer {
     background-color: #276069ca;
     width: 100vw;
     height: 100vh;
     display: flex;
+}
+.productDetails-BackButton {
+    opacity: 0.8;
+    background-color: transparent;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    transform: rotate(180deg);
+    transition: ease-out 0.1s;
+}
+.productDetails-BackButton:hover {
+    opacity: 1;
+    right: 4.5%;
+    transition: ease-out 0.2s;
 }
 .productDetails-Box {
     width: 95%;

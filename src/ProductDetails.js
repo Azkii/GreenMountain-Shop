@@ -1,7 +1,11 @@
 import {Link} from 'react-router-dom'
+import iconArrow from './Photos/icons/arrow.svg'
 
 function ProductDetails(props) {
   let content = <div className="productDetails-MainContainer">
+                <Link to="/">
+                <img className="productDetails-BackButton" src={iconArrow} />
+                </Link>
                 <div className="productDetails-Box">
                     <div className="producDetails-Photos">
                         <div className="productDetails-Gallery">
