@@ -22,20 +22,21 @@ function ProductDetails(props) {
                         <img src={props.product.image} alt="Green tea"></img>
                     </div>
                 </div>
-                
                 <div className="producDetails-Content">
-                    <div className="producDetails-Rating" >
-                        <ul>
-                            <li> &#9733; </li>
-                            <li> &#9733; </li>
-                            <li> &#9733; </li>
-                            <li> &#9733; </li>
-                            <li> &#9733; </li>
-                        </ul>
-                        <p>(2 Reviews)</p>
-                    </div>
-                    <h1>Here is. {props.product.name} Name & Informations </h1>
-                    <p>Availability (In stock)</p>
+                    <section>
+                        <div className="producDetails-Rating" >
+                            <ul>
+                                <li> &#9733; </li>
+                                <li> &#9733; </li>
+                                <li> &#9733; </li>
+                                <li> &#9733; </li>
+                                <li> &#9733; </li>
+                            </ul>
+                            <p>(2 Reviews)</p>
+                        </div>
+                        <h1 className="producDetails-Tittle" >Here is. {props.product.name} Name & Informations </h1>
+                        <p className="productDetails-Avaible">Availability (In stock)</p>
+                    </section>
                     <div className="producDetails-PriceSection">
                         <p>$ {props.product.price[0]}</p>
                         <ul className="producDetails-Size">
@@ -46,13 +47,15 @@ function ProductDetails(props) {
                             <li>B</li>
                         </ul>
                     </div>
-                    <ul className="producDetails-InfoOptions">
-                        <li>Product. Info.</li>
-                        <li>Reviews</li>
-                    </ul>
-                    <div className="producDetails-Info">
-                        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsum
-                    </div>
+                    <section>
+                        <ul className="producDetails-InfoOptions">
+                            <li>Product Info.</li>
+                            <li>Reviews</li>
+                        </ul>
+                        <div className="producDetails-Info">
+                            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsum
+                        </div>
+                    </section>
                     <div className="producDetails-Buttons">
                         <div className="producDetails-QntButton">
                             <p>Qnt</p>

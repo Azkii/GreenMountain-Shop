@@ -341,7 +341,9 @@ footer h1 {
 
 
 /*--------------------------in progress ----------------------------------------*/
-
+body {
+    background-color: rgb(231, 231, 231);
+}
 .productDetails-Box {
     padding-top: 5vh;
     width: 90%;
@@ -349,16 +351,19 @@ footer h1 {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .producDetails-Photos {
-    background-color: rgb(117, 28, 28);
     display: flex;
     justify-content: space-evenly;
     width: 50%;
 }
 .producDetails-Content {
-    background-color: rgb(36, 68, 75);
     width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .productDetails-PhotoDis {
     display: flex;
@@ -378,9 +383,8 @@ footer h1 {
     width: 120px;
     margin-bottom: 25px;
 }
-
+/*done*/
 .producDetails-Rating {
-    background-color: rgb(43, 117, 105);
     display: flex;
     height: 40px;
     align-items: center;
@@ -395,8 +399,14 @@ footer h1 {
     margin-left: 5px;
     font-size: 20px;
 }
+.producDetails-Tittle{
+    font-size: 40px;
+}
+.productDetails-Avaible {
+    font-size: 20px;
+    opacity: 0.8;
+}
 .producDetails-PriceSection {
-    background-color: rgb(151, 60, 60);
     display: flex;
     flex-direction: column;
 }
@@ -405,24 +415,49 @@ footer h1 {
     font-weight: bolder;
 }
 .producDetails-Size {
-    background-color: green;
     list-style: none;
     display: flex;
 }
 .producDetails-InfoOptions {
-    background-color: rgb(43, 117, 105);
     list-style: none;
     display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.producDetails-InfoOptions li {
+    margin-right: 10px;
 }
 .producDetails-Buttons {
     display: flex;
 }
 .producDetails-QntButton {
-    background-color: red;
+    height: 40px;
+    width: 150px;
+    border: solid black 2px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
 }
 .producDetails-QntButton ul {
     display: flex;
     list-style: none;
+    justify-content: space-around;
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.producDetails-QntButton ul li:nth-child(1), .producDetails-QntButton ul li:nth-child(3) {
+    cursor: pointer;
+}
+.producDetails-Buttons button {
+    background-color: rgb(32, 73, 32);
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.794);
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
 }
 /*--------------------------in progress ----------------------------------------*/
