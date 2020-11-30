@@ -368,14 +368,14 @@ footer h1 {
     margin: auto;
     border-radius: 5px;
 }
-.producDetails-Photos {
+.productDetails-Photos {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 45%;
     height: 550px;
 }
-.producDetails-Content {
+.productDetails-Content {
     width: 45%;
     height: 550px;
     display: flex;
@@ -417,12 +417,12 @@ footer h1 {
 .productDetails-Gallery img:nth-child(2) {
     margin: 20px 0px 20px 0px;
 }
-.producDetails-Rating {
+.productDetails-Rating {
     display: flex;
     height: 40px;
     align-items: center;
 }
-.producDetails-Rating ul {
+.productDetails-Rating ul {
     list-style: none;
     display: flex;
     font-size: 20px;
@@ -430,49 +430,59 @@ footer h1 {
     opacity: 1;
     color: #224246;
 }
-.producDetails-Rating p {
+.productDetails-Rating p {
     margin-left: 5px;
     font-size: 20px;
     color:#224247;
 }
-.producDetails-Tittle{
+.productDetails-Tittle{
     font-size: 40px;
 }
 .productDetails-Avaible {
     font-size: 20px;
     opacity: 0.8;
 }
-.producDetails-PriceSection {
+.productDetails-PriceSection {
     display: flex;
     align-items: center;
 }
-.producDetails-PriceSection p {
+.productDetails-PriceSection p {
     font-size: 40px;
     font-weight: bolder;
     margin-right: 20px;
 }
-.producDetails-Size {
+.productDetails-Size {
     list-style: none;
     display: flex;
+    width: 100px;
+    justify-content: space-around;
 }
-.producDetails-InfoOptions {
+.productDetails-Size li {
+    opacity: 0.8;
+    font-size: 20px;
+}
+.productDetails-SizeHover:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.productDetails-InfoOptions {
     list-style: none;
     display: flex;
     margin-bottom: 20px;
     font-size: 20px;
 }
-.producDetails-InfoOptions li {
+.productDetails-InfoOptions li {
     margin-right: 10px;
     border-bottom: solid #1c363ab6 2px;
 }
-.producDetails-Info {
+.productDetails-Info {
     padding-right: 50px;
     text-align: justify;
 }
-.producDetails-Buttons {
+.productDetails-Buttons {
     display: flex;
 }
-.producDetails-QntButton {
+.productDetails-QntButton {
     height: 50px;
     width: 150px;
     border: solid #26535a 2px;
@@ -483,17 +493,17 @@ footer h1 {
     margin-right: 50px;
     font-weight: bold;
 }
-.producDetails-QntButton ul {
+.productDetails-QntButton ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
     width: 80px;
     font-size: 20px;
 }
-.producDetails-QntButton ul li:nth-child(1), .producDetails-QntButton ul li:nth-child(3) {
+.productDetails-QntButton ul li:nth-child(1), .productDetails-QntButton ul li:nth-child(3) {
     cursor: pointer;
 }
-.producDetails-Buttons button {
+.productDetails-Buttons button {
     background-color:#30656d;
     height: 50px;
     width: 200px;

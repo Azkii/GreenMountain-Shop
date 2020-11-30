@@ -7,7 +7,7 @@ function ProductDetails(props) {
                 <img className="productDetails-BackButton" src={iconArrow} />
                 </Link>
                 <div className="productDetails-Box">
-                    <div className="producDetails-Photos">
+                    <div className="productDetails-Photos">
                         <div className="productDetails-Gallery">
                             <img src={props.product.image} alt="Green tea"></img>
                             <img src={props.product.image} alt="Green tea"></img>
@@ -17,9 +17,9 @@ function ProductDetails(props) {
                             <img src={props.product.image} alt="Green tea"></img>
                         </div>
                     </div>
-                    <div className="producDetails-Content">
+                    <div className="productDetails-Content">
                         <section>
-                            <div className="producDetails-Rating" >
+                            <div className="productDetails-Rating" >
                                 <ul>
                                     <li> &#9733; </li>
                                     <li> &#9733; </li>
@@ -29,29 +29,29 @@ function ProductDetails(props) {
                                 </ul>
                                 <p>(2 Reviews)</p>
                             </div>
-                            <h1 className="producDetails-Tittle" >Here is. {props.product.name} Name & Informations </h1>
+                            <h1 className="productDetails-Tittle" >Here is. {props.product.name} Name & Informations </h1>
                             <p className="productDetails-Avaible">Availability (In stock)</p>
                         </section>
-                        <div className="producDetails-PriceSection">
+                        <div className="productDetails-PriceSection">
                             <p>$ {props.product.price[0]}</p>
-                            <ul className="producDetails-Size">
-                                <li>S</li>
+                            <ul className="productDetails-Size">
+                                <li className="productDetails-SizeHover" >S</li>
                                 <li>|</li>
-                                <li>M</li>
+                                <li className="productDetails-SizeHover">M</li>
                                 <li>|</li>
-                                <li>B</li>
+                                <li className="productDetails-SizeHover">B</li>
                             </ul>
                         </div>
                         <section>
-                            <ul className="producDetails-InfoOptions">
+                            <ul className="productDetails-InfoOptions">
                                 <li>Product Info.</li>
                             </ul>
-                            <div className="producDetails-Info">
+                            <div className="productDetails-Info">
                                 Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsumem ipsumLorem ipsumLorem ipsum
                             </div>
                         </section>
-                        <div className="producDetails-Buttons">
-                            <div className="producDetails-QntButton">
+                        <div className="productDetails-Buttons">
+                            <div className="productDetails-QntButton">
                                 <p>Qnt</p>
                                 <ul>
                                     <li>-</li>
