@@ -4,29 +4,9 @@ import React, {useState} from 'react'
 
 function ProductDetails(props) {
     const [count, setCount] = useState(0);
-    let small = true
-    let medium = false
-    let big = false
-    function test() {
-        if (count === 0) {
-            small = true
-            medium = false
-            big = false
-        }
-        if (count === 1) {
-            medium = true
-            small = false
-            big = false
-        }
-        if (count === 2) {
-            big = true
-            medium = false
-            small = false
-        }
-        else {
-            small = true
-        }
-    }
+    const [small, setSmall] = useState(true);
+    const [medium, setMedium] = useState(false);
+    const [big, setBig] = useState(false);
 /*Import*/
   let content = <div className="productDetails-MainContainer">
                 <Link to="/">
@@ -61,9 +41,9 @@ function ProductDetails(props) {
                         <div className="productDetails-PriceSection">
                             <p>$ {props.product.price[count]}</p>
                             <ul className="productDetails-Size">
-                                <li className = { small ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setCount(0); test()}} >S</li>
-                                <li className = { medium ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setCount(1); test()}} >M</li>
-                                <li className = { big ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setCount(2); test()}} >B</li>
+                                <li className = { small ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setSmall(true); setMedium(false); setBig(false); setCount(0)}} >S</li>
+                                <li className = { medium ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setMedium(true); setSmall(false); setBig(false); setCount(1)}} >M</li>
+                                <li className = { big ? "productDetails-SizeHovered" : "productDetails-SizeHover"} onClick={() => {setBig(true); setSmall(false); setMedium(false); setCount(2)}} >B</li>
                             </ul>
                         </div>
                         <section>
