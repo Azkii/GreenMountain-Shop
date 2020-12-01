@@ -5,6 +5,11 @@ const ProductsDataBase = [
         type: "black-tea",
         price: [1, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -13,6 +18,11 @@ const ProductsDataBase = [
         type: "green-tea",
         price: [49, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -21,6 +31,11 @@ const ProductsDataBase = [
         type: "oolong-tea",
         price: [130, 150, 200],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -29,6 +44,11 @@ const ProductsDataBase = [
         type: "white-tea",
         price: [2, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -37,6 +57,11 @@ const ProductsDataBase = [
         type: "black-tea",
         price: [1, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -45,6 +70,11 @@ const ProductsDataBase = [
         type: "green-tea",
         price: [49, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -53,6 +83,11 @@ const ProductsDataBase = [
         type: "oolong-tea",
         price: [13, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -61,6 +96,11 @@ const ProductsDataBase = [
         type: "white-tea",
         price: [2, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -69,6 +109,11 @@ const ProductsDataBase = [
         type: "black-tea",
         price: [1, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -77,6 +122,11 @@ const ProductsDataBase = [
         type: "green-tea",
         price: [49, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -85,6 +135,11 @@ const ProductsDataBase = [
         type: "oolong-tea",
         price: [25, 35, 50],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
     {
@@ -93,6 +148,11 @@ const ProductsDataBase = [
         type: "white-tea",
         price: [2, 15, 20],
         image: "https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp",
+        gallery: [
+            'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
+            'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+        ],
         sizes: ["big", "medium", "small"]
     },
 ]
