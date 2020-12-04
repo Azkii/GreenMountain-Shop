@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
-import iconArrow from './Photos/icons/arrow.svg'
+import iconArrowBlack from './Photos/icons/arrow.svg'
+import iconArrowWhite from './Photos/icons/arrowWhite.svg'
 import React, {useState} from 'react'
 import './components/ProductDetails/productDetails.css'
 import './components/ProductDetails/productDetailsMobile.css'
@@ -14,14 +15,14 @@ function ProductDetails(props) {
 /*Import*/
   let content = <div className="productDetails-MainContainer">
                 <Link to="/">
-                <img className="productDetails-BackButton" src={iconArrow} alt="arrowSign" />
+                <img className="productDetails-BackButton" src={iconArrowBlack} alt="arrowSign" />
                 </Link>
                 <div className="productDetails-Box">
                     <div className="productDetails-Photos">
                         <div className="productDetails-Gallery">
-                            <img src={props.product.gallery[0]} onClick= {() => setPhoto(0)} alt="Green tea"></img>
-                            <img src={props.product.gallery[1]} onClick= {() => setPhoto(1)} alt="Green tea"></img>
-                            <img src={props.product.gallery[2]} onClick= {() => setPhoto(2)} alt="Green tea"></img>
+                            <img src={props.product.gallery[0]} onClick= {() => setPhoto(0)} alt={props.product.name}></img>
+                            <img src={props.product.gallery[1]} onClick= {() => setPhoto(1)} alt={props.product.name}></img>
+                            <img src={props.product.gallery[2]} onClick= {() => setPhoto(2)} alt={props.product.name}></img>
                         </div>
                         <div className="productDetails-PhotoDis">
                             <img src={props.product.gallery[photo]} alt="Green tea"></img>
@@ -80,7 +81,26 @@ function ProductDetails(props) {
         content = ""
    }
     return (
-        content
+        <div className="productDetailsMobile-Box">
+            <img className="productDetailsMobile-BackButton" src={iconArrowWhite} alt="Go back button"></img>
+            <div className="productDetailsMobile-Image">
+                <img src={props.product.gallery[3]} alt="Green tea"></img>
+            </div>
+            <div className="productDetailsMobile-Content">
+                <h1 className="productDetailsMobile-Name">{props.product.name}</h1>
+                <p className="productDetailsMobile-Price">$ {props.product.price[count]}</p>
+                <ul className="productDetailsMobile-Size">
+                    <li className = { small ? "productDetailsMobile-SizeHovered" : "productDetailsMobile-SizeHover"} onClick={() => {setSmall(true); setMedium(false); setBig(false); setCount(0)}} title="Small size" >S</li>
+                    <li className = { medium ? "productDetailsMobile-SizeHovered" : "productDetailsMobile-SizeHover"} onClick={() => {setMedium(true); setSmall(false); setBig(false); setCount(1)}} title="Medium size">M</li>
+                    <li className = { big ? "productDetailsMobile-SizeHovered" : "productDetailsMobile-SizeHover"} onClick={() => {setBig(true); setSmall(false); setMedium(false); setCount(2)}} title="Big size" >B</li>
+                </ul>
+                <div className="productDetailsMobile-Desc">
+                    Our tea will help you in many ways..
+                    Some text ...
+                </div>
+                <button className="productDetailsMobile-BuyButton">ADD TO CARD</button>
+            </div>
+        </div>
     )
 }
 

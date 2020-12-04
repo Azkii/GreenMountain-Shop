@@ -8,7 +8,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -21,7 +22,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -34,7 +36,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -47,7 +50,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -60,7 +64,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -73,7 +78,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -86,7 +92,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -99,7 +106,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -112,7 +120,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -125,7 +134,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -138,7 +148,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
@@ -151,7 +162,8 @@ const ProductsDataBase = [
         gallery: [
             'https://moyamatcha.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2016/03/Zielona-herbata-Moya-Matcha-Tradycyjna-30g-1-510x510.jpg.webp',
             'https://reputationtoday.in/wp-content/uploads/2020/06/Greentea.jpg',
-            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg'
+            'https://zegarkiipiora.files.wordpress.com/2016/02/sailor_kobe_34_sm-3.jpg',
+            'https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg',
         ],
         sizes: ["big", "medium", "small"]
     },
