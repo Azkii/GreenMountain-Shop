@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom'
 import iconArrow from './Photos/icons/arrow.svg'
 import React, {useState} from 'react'
+import './components/ProductDetails/productDetails.css'
+import './components/ProductDetails/productDetailsMobile.css'
 
 function ProductDetails(props) {
     const [photo, setPhoto] = useState(0)
