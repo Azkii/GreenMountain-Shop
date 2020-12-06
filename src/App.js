@@ -1,6 +1,6 @@
 import './App.css';
 import './AppMobile.css'
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import {Route} from 'react-router-dom'
 import NavBar from './Navbar'
 import HomePage from './HomePage'
@@ -17,11 +17,27 @@ function App() {
   const scrollToProducts= () => ProductsRef.current.scrollIntoView()
   const scrollToAboutUs = () => AboutUsRef.current.scrollIntoView()
 
+  const [showBurger, setBurger] = useState(true);
+  const showNavBarMenu = () => {
+      if (window.innerWidth <= 1000) {
+          setBurger(false)
+      }
+      else {
+          setBurger(true)
+          document.body.style.overflow = ""
+      }
+  }
+  window.addEventListener('load', showNavBarMenu);
+  window.addEventListener('resize', showNavBarMenu);
+
   //Render detailed items
   const productDetails = ProductsDataBase.map(product =>
     <ProductDetails
         key={product.id}
         product={product}
+        content = {{
+          mobile : showBurger,
+        }}
     />)
   //
   
@@ -33,11 +49,17 @@ function App() {
             scrollToHomePage : scrollToHomePage,
             scrollToProducts : scrollToProducts,
             scrollToAboutUs : scrollToAboutUs,
+            showBurger : showBurger,
           }} 
         />
         <HomePage content={{HomePageRef : HomePageRef}}/>
         <Products content={{ProductsRef : ProductsRef}} />
-        <AboutUs content={{AboutUsRef : AboutUsRef}}/>
+        <AboutUs 
+          content={{
+            AboutUsRef : AboutUsRef,
+            showBurger : showBurger,
+          }}
+        />
         <Footer
           content={{
             scrollToHomePage : scrollToHomePage,

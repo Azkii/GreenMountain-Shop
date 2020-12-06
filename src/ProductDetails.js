@@ -12,19 +12,6 @@ function ProductDetails(props) {
     const [small, setSmall] = useState(true)
     const [medium, setMedium] = useState(false)
     const [big, setBig] = useState(false)
-/*Dynamic resize to mobile ver*/
-const [Mobile, setMobile] = useState(false);
-    const showMobile = () => {
-        if (window.innerWidth <= 1000) {
-            setMobile(true)
-        }
-        else {
-            setMobile(false)
-        }
-    }
-    window.addEventListener('load', showMobile);
-    window.addEventListener('resize', showMobile);
-/*End of Dynamic resize*/
 /*Import*/
   let contentDesktop = 
                 <div className="productDetails-MainContainer">
@@ -121,7 +108,7 @@ const [Mobile, setMobile] = useState(false);
         }
     return (
         <div>
-            {Mobile ? contentMobile : contentDesktop}
+            {props.content.mobile ? contentDesktop : contentMobile}
         </div>
     )
 }

@@ -17,6 +17,7 @@
     height: 100vh;
     width: 100%;
     background-color: rgb(39, 45, 59);
+    overflow: hidden;
 }
 .productDetailsMobile-BackButton {
     opacity: 0.9;
@@ -137,6 +138,11 @@
     display: flex;
     align-items: center;
     letter-spacing: 2px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 .productDetailsMobile-BuyButton:hover {
     background-color: #317885;

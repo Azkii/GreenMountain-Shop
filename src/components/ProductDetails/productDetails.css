@@ -1,6 +1,11 @@
 /*--------------------------in progress ----------------------------------------*/
 .productDetails-MainContainer {
-    background-color: #488f9be1;
+    background:
+        linear-gradient(#00000050, #00000050),
+        url('https://www.tarladalal.com/members/9306/big/big_masala_chai_or_masala_tea-14441.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -27,13 +32,20 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.966);
+    background-color: rgb(255, 255, 255);
     max-height: 90%;
     min-height: 80%;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: auto;
     border-radius: 5px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .productDetails-Photos {
     display: flex;
@@ -126,7 +138,7 @@
 .productDetails-Size {
     list-style: none;
     display: flex;
-    width: 120px;
+    width: 180px;
     justify-content: space-evenly;
 }
 .productDetails-Size li {
@@ -139,14 +151,29 @@
     align-items: center;
     cursor: pointer;
 }
+.productDetails-SizeHover {
+    border: solid #276069 2px;
+    color: #276069;
+    border-radius: 50%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+}
 .productDetails-SizeHover:hover {
     opacity: 1;
 }
 .productDetails-SizeHovered {
     cursor: pointer;
-    background-color: #41b1c2fa;
+    background-color: #397780;
     color: rgb(255, 255, 255);
     border-radius: 50%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 .productDetails-InfoOptions {
     list-style: none;
@@ -156,7 +183,8 @@
 }
 .productDetails-InfoOptions li {
     margin-right: 10px;
-    border-bottom: solid #1c363ab6 2px;
+    color: #33565c;
+    border-bottom: solid #397780 2px;
 }
 .productDetails-Info {
     padding-right: 50px;
@@ -195,5 +223,10 @@
     border: none;
     border-radius: 2.5px;
     cursor: pointer;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072);
 }
 /*--------------------------in progress ----------------------------------------*/

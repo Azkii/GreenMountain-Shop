@@ -1,17 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import ContactUs from './components/ContactUs/ContactUs'
 function AboutUs(props) {
-    const [showBurger, setBurger] = useState(true);
-    const showNavBarMenu = () => {
-        if (window.innerWidth <= 1000) {
-            setBurger(false)
-        }
-        else {
-            setBurger(true)
-        }
-    }
-    window.addEventListener('load', showNavBarMenu);
-    window.addEventListener('resize', showNavBarMenu);
     return (
         <article className="aboutUsContainer" ref={props.content.AboutUsRef}>
             <div className="aboutUs-Title">
@@ -33,7 +22,7 @@ function AboutUs(props) {
                     </div>
                 </div>
             </div>
-            <ContactUs content= {{mobileSize : showBurger }} />
+            <ContactUs content= {{mobileSize : props.content.showBurger }} />
         </article>
     )
 }
