@@ -1,6 +1,7 @@
 import React from 'react'
 import Categories from './components/Categories/Categories'
 import Product from './components/Product/Product'
+import ProductMobile from './components/Product/ProductMobile'
 import ProductsDataBase from "./productDataBase"
 //Imported buttons
 import ShowMore from './components/Product/ShowMore'
@@ -10,7 +11,6 @@ class Products extends React.Component {
         super(props)
         this.state = {
             kotek: 6,
-            sliced: false,
             catBlackTea: false,
             catGreenTea: false,
             catOolongTea: false,
@@ -20,7 +20,6 @@ class Products extends React.Component {
             fromHighest: false,
         }
         this.showMore = this.showMore.bind(this)
-        this.sliced = this.sliced.bind(this)
         this.categoriesByTypeBlack = this.categoriesByTypeBlack.bind(this)
         this.categoriesByTypeGreen = this.categoriesByTypeGreen.bind(this)
         this.categoriesByTypeOolong = this.categoriesByTypeOolong.bind(this)
@@ -45,26 +44,10 @@ class Products extends React.Component {
             this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
-    sliced() {
-        if(window.innerWidth <= 700) {
-            this.setState(() => {
-                return {
-                    sliced: 3
-                }
-            })
-        }
-        else {
-            this.setState(() => {
-                return {
-                    sliced: 1
-                }
-            })
-        }
-    }
 //sort seperate categiores
     categoriesByTypeBlack() {
         if (this.state.catBlackTea === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     catBlackTea: true,
                 }
@@ -80,7 +63,7 @@ class Products extends React.Component {
     }
     categoriesByTypeGreen() {
         if (this.state.catGreenTea === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     catGreenTea: true,
                 }
@@ -96,7 +79,7 @@ class Products extends React.Component {
     }
     categoriesByTypeOolong() {
         if (this.state.catOolongTea === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     catOolongTea: true,
                 }
@@ -112,14 +95,14 @@ class Products extends React.Component {
     }
     categoriesByTypeWhite() {
         if (this.state.catWhiteTea === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     catWhiteTea: true,
                 }
             })
         }
         else {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     catWhiteTea: false,
                 }
@@ -148,7 +131,7 @@ class Products extends React.Component {
     //Sort value by price
     sortValueLowest() {
         if (this.state.fromLowest === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     fromLowest: true,
                     fromHighest: false,
@@ -157,7 +140,7 @@ class Products extends React.Component {
             })
         }
         else {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     fromLowest: false,
                 }
@@ -166,7 +149,7 @@ class Products extends React.Component {
     }
     sortValueHighest() {
         if (this.state.fromHighest === false) {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     fromHighest: true,
                     fromLowest: false,
@@ -175,7 +158,7 @@ class Products extends React.Component {
             })
         }
         else {
-            this.setState(prevState => {
+            this.setState(() => {
                 return {
                     fromHighest: false,
                 }
@@ -195,10 +178,25 @@ class Products extends React.Component {
                     catWhiteTea: this.state.catWhiteTea,
                 }}
             />)
+        const ProductListMobile = ProductsDataBase.map(product =>
+            <ProductMobile
+                key={product.id}
+                product={product}
+                content={{
+                    catBlackTea: this.state.catBlackTea,
+                    catGreenTea: this.state.catGreenTea,
+                    catOolongTea: this.state.catOolongTea,
+                    catWhiteTea: this.state.catWhiteTea,
+                }}
+            />)
         //sliced for phones
-        let ProductListSliced = ProductList.slice(0, this.state.kotek / this.state.sliced)
-        window.addEventListener('load', this.sliced)
-        window.addEventListener('resize', this.sliced)
+        let ProductListSliced
+        if (this.props.content.mobile === false) {
+            ProductListSliced = ProductListMobile.slice(0, this.state.kotek)
+        }
+        else {
+            ProductListSliced = ProductList.slice(0, this.state.kotek)
+        }
         //sort by name
         if (this.state.sortByName === true) {
             ProductListSliced = ProductListSliced.sort(function(a, b) {

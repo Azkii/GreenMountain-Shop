@@ -1,0 +1,87 @@
+@keyframes mymove {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mymove2 {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.productMobile-box {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 300px;
+    margin-bottom: 2.5%;
+}
+.productMobile-box img{
+    width: 150px;
+}
+.productMobile-box h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+.productMobile-box p{
+    font-size: 20px;
+    text-align: center;
+}
+.productMobile-HoverDetailsON {
+    background-color: rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 45%;
+    height: 300px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    animation: mymove 0.3s;
+}
+.productMobile-HoverDetailsOFF {
+    display: none;
+}
+.productMobile-Buttons {
+    padding-top: 20px;
+    animation: mymove2 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.productMobile-Button {
+    margin-bottom: 20px;
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.productMobile-Details {
+    background-color: rgb(49, 101, 112);
+    border: none;
+    color: white;
+}
+.productMobile-Cart {
+    background-color: transparent;
+    border: solid rgb(49, 101, 112) 2px;
+    color: rgb(49, 101, 112);
+}
+.productMobile-Cart:hover {
+    background-color: rgb(49, 101, 112);
+    color: white;
+    border: none;
+    transition: ease-out 0.2s;
+}

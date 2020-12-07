@@ -53,7 +53,12 @@ function App() {
           }} 
         />
         <HomePage content={{HomePageRef : HomePageRef}}/>
-        <Products content={{ProductsRef : ProductsRef}} />
+        <Products 
+          content={{
+            ProductsRef : ProductsRef,
+            mobile : showBurger,
+          }}
+        />
         <AboutUs 
           content={{
             AboutUsRef : AboutUsRef,
