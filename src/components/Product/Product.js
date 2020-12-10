@@ -9,7 +9,7 @@ function Product(props) {
                         <div onMouseEnter={handleClick} onMouseLeave = {handleClick} className={click ? "product-Container" : "product-ContainerHover product-Container" }>
                             <img className="product-photo" src={props.product.image} alt="Tea-example"/>
                             <h2 className="product-name">{props.product.name}</h2>
-                            <p className="product-price">{props.product.price[0]}$~{props.product.price[2]}$</p>
+                            <p className="product-price">{props.product.price[0]}$</p>
                             {click ? "" : ( 
                                 <div className={click ? "HoverDetails" : "HoverDetails HoverDetails2"}>
                                     <Link to={`/product/${props.product.name + props.product.id}`}>

@@ -1,0 +1,120 @@
+.teaFinder-Box {
+    background-color: rgb(42, 41, 93);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+}
+.teaFinder-Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    height: 10%;
+    width: 85%;
+}
+.teaFinder-Form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.89);
+    width: 85%;
+    height: 65%;
+}
+.teaFinder-FormPage {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.teaFinder-FormPage p{
+    font-size: 30px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teaFinder-FormPage p span{
+    padding-bottom: 2px;
+    border-bottom: solid rgba(42, 41, 93, 0.185) 2px;
+}
+.teaFinder-FormPage ul {
+    height: 50%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+}
+.teaFinder-FormPage ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border: solid rgb(42, 41, 93) 2px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.teaFinder-FormPage ul li:hover{
+    background-color: rgb(42, 41, 93);
+    transition: ease-out 0.2s;
+    color: white;
+}
+.teaFinder-Progress {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    height: 15%;
+    width: 100%;
+}
+.teaFinder-ProgressLine {
+    background-color: black;
+    margin-left: 10%;
+    width: 80%;
+    height: 4px;
+}
+.teaFinder-ProgressFlag1, .teaFinder-ProgressFlag2, .teaFinder-ProgressFlag3 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    border: solid black 2px;
+}
+.teaFinder-ProgressFlag1 {
+    margin-left: 12%;
+}
+.teaFinder-ProgressFlag2 {
+    margin-left: 22%;
+}
+.teaFinder-ProgressFlag3 {
+    margin-left: 32%;
+}
+.teaFinder-ProgressResult {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 42%;
+    font-size: 25px;
+    border: solid black 2px;
+    background-color: white;
+}

@@ -9,6 +9,7 @@ import AboutUs from './AboutUs'
 import Footer from './Footer'
 import ProductsDataBase from './productDataBase'
 import ProductDetails from './ProductDetails'
+import AllProducts from './components/AllProducts/AllProducts'
 function App() {
   const HomePageRef = useRef(null)
   const ProductsRef = useRef(null)
@@ -75,6 +76,9 @@ function App() {
       <Route path="/product/" >
         {productDetails}
       </Route>
+      <Route path="/product/" exact>
+        <AllProducts />
+        </Route>
     </div>
   );
 }
