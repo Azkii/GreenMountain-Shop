@@ -1,5 +1,5 @@
 .product-Container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(39, 39, 39);
     width: 330px;
     height: 550px;
@@ -17,6 +17,7 @@
 }
 .product-photo {
     width: 330px;
+    height: 330px;
 }
 .product-name {
     letter-spacing: 2px;

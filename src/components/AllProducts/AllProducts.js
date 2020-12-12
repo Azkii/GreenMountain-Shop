@@ -1,12 +1,32 @@
 import React from 'react'
 import TeaFinder from '../TeaFinder/TeaFinder'
 import './AllProducts.css'
-function AllProducts() {
-    return (
-        <div className="allProduct-box">
-            <h1>Let's search together for best bet for you.</h1>
-            <TeaFinder />
-        </div>
-    )
+import CategoriesAll from './CategoriesAll'
+import ProductsDataBase from '../../productDataBase'
+import Product from './AllProducts-Product'
+class AllProducts extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+        const productDetails = ProductsDataBase.map(product =>
+            <Product
+                key={product.id}
+                product={product}
+            />)
+        return (
+            <div className="allProduct-box">
+                <CategoriesAll />
+                <div className="allProduct-ProductsBox">
+                    <p>
+                        {productDetails.length} tea's found. 
+                    </p>
+                    <div className="allProduct-ProductsList">
+                        {productDetails}
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 export default AllProducts
