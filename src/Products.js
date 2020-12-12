@@ -50,15 +50,19 @@ class Products extends React.Component {
             this.setState(() => {
                 return {
                     catBlackTea: true,
+                    kotek: 12,
                 }
             })
+            this.showButton = <ShowAll />
         }
         else {
             this.setState(() => {
                 return {
-                    catBlackTea: false
+                    catBlackTea: false,
+                    kotek: 6,
                 }
             })
+            this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
     categoriesByTypeGreen() {
@@ -66,15 +70,19 @@ class Products extends React.Component {
             this.setState(() => {
                 return {
                     catGreenTea: true,
+                    kotek: 12,
                 }
             })
+            this.showButton = <ShowAll />
         }
         else {
             this.setState(() => {
                 return {
-                    catGreenTea: false
+                    catGreenTea: false,
+                    kotek: 6,
                 }
             })
+            this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
     categoriesByTypeOolong() {
@@ -82,15 +90,19 @@ class Products extends React.Component {
             this.setState(() => {
                 return {
                     catOolongTea: true,
+                    kotek: 12,
                 }
             })
+            this.showButton = <ShowAll />
         }
         else {
             this.setState(() => {
                 return {
-                    catOolongTea: false
+                    catOolongTea: false,
+                    kotek: 6,
                 }
             })
+            this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
     categoriesByTypeWhite() {
@@ -98,15 +110,19 @@ class Products extends React.Component {
             this.setState(() => {
                 return {
                     catWhiteTea: true,
+                    kotek: 12,
                 }
             })
+            this.showButton = <ShowAll />
         }
         else {
             this.setState(() => {
                 return {
                     catWhiteTea: false,
+                    kotek: 6,
                 }
             })
+            this.showButton = <ShowMore content={{showMore : this.showMore}} />
         }
     }
     //Sort value by Name
