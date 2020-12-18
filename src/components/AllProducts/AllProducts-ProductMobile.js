@@ -1,24 +1,26 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-function Product(props) {
-    const [click, setClick] = useState(true)
-    const handleClick = () => setClick(!click)
-    //Product start
-    let contnet =
-        <div className="allProducts-dummyBox">
-            <div className="allProducts-ProductBox" onMouseEnter={handleClick} onMouseLeave = {handleClick} >
-                <img src={props.product.image}></img>
-                <p>{props.product.name}</p>
-                <p>{props.product.price[0]} $</p>
-                <div className={click ? "allProducts-Buttons" : "allProducts-Buttons allProducts-ButtonsHovered"}>
+function ProductMobile(props) {
+    const [hover, setHover] = useState(true)
+    let contnet = 
+        <div 
+            onMouseEnter={() => setHover(false)}
+            onMouseLeave={() => setHover(true)}
+            className="productMobile-box"
+        >
+            <img src={props.product.image}></img>
+            <h1>{props.product.name}</h1>
+            <p>{props.product.price[0]}$</p>
+            <div className={hover ? "productMobile-HoverDetailsOFF" : "productMobile-HoverDetailsON"}>
+                <div className="productMobile-Buttons">
                     <Link to={`/product/${props.product.name + props.product.id}`}>
-                    <button className="allProduct-ButtonDetails" >Details.</button>
+                        <button className="productMobile-Details productMobile-Button">Details.</button>
                     </Link>
-                    <button>Add to card.</button>
+                    <button className="productMobile-Cart productMobile-Button">Add to cart.</button>
                 </div>
             </div>
         </div>
-    //Product end
+    //END
     if(props.content.catBlackTea === true || props.content.catGreenTea === true || props.content.catOolongTea === true || props.content.catWhiteTea === true) {
         if (props.content.catBlackTea === false) {
             if (props.product.type === "black-tea") {
@@ -45,4 +47,4 @@ function Product(props) {
         contnet
     )
 }
-export default Product
+export default ProductMobile

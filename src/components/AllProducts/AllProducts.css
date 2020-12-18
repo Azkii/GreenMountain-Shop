@@ -16,6 +16,13 @@
     justify-content: center;
     background-color: thistle;
 }
+.allProduct-lenght {
+    font-size: 30px;
+    color: rgb(17, 17, 17);
+}
+.CategoriesAll-HoveredColor {
+    opacity: 1;
+}
 .CategoriesAll-CatList {
     margin-top: 25px;
     list-style: none;
@@ -25,6 +32,8 @@
     padding-bottom: 25px;
 }
 .CategoriesAll-CatList li {
+    opacity: 0.8;
+    cursor: pointer;
     width: 150px;
     height: 40px;
     display: flex;
@@ -33,6 +42,12 @@
     font-size: 25px;
 }
 .CategoriesAll-CatList li:hover {
+    opacity: 1;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-bottom: solid white 2px;
+}
+.CategoriesAll-CatListHovered {
     padding-top: 7px;
     padding-bottom: 5px;
     border-bottom: solid white 2px;
@@ -46,6 +61,13 @@
     width: 80%;
     padding-bottom: 25px;
     font-size: 20px;
+}
+.CategoriesAll-SortList li {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.CategoriesAll-SortList li:hover {
+    opacity: 1;
 }
 .allProduct-ProductsBox {
     margin-top: 50px;
@@ -113,22 +135,22 @@
     display: flex;
 }
 .allProducts-Buttons button {
-    width: 70%;
+    width: 250px;
     height: 45px;
     font-size: 25px;
 }
 .allProducts-Buttons button:nth-child(1) {
-    background-color: blue;
+    background-color: rgb(49, 101, 112);
     border: none;
     color: white;
 }
 .allProducts-Buttons button:nth-child(2) {
-    border: solid blue 2px;
+    border: solid rgb(49, 101, 112) 2px;
     background-color: transparent;
-    color: blue;
+    color: rgb(49, 101, 112);
 }
 .allProducts-Buttons button:nth-child(2):hover {
     transition: ease-in 0.2s;
-    background-color: blue;
+    background-color: rgb(49, 101, 112);
     color: white;
 }

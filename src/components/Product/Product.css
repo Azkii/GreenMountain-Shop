@@ -71,9 +71,10 @@
     color: rgb(49, 101, 112);
     margin-top: 25px;
     opacity: 0.9;
+    transition: ease-out 0.2s;
 }
 .hoverDetails-Checkout:hover {
-    transition: ease-out 0.2s;
+    transition: ease-out 0.4s;
     background-color: rgb(49, 101, 112);
     color: white;
     opacity: 1;

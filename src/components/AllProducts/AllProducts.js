@@ -4,6 +4,7 @@ import './AllProducts.css'
 import CategoriesAll from './CategoriesAll'
 import ProductsDataBase from '../../productDataBase'
 import Product from './AllProducts-Product'
+import ProductMobile from './AllProducts-ProductMobile'
 class AllProducts extends React.Component {
     constructor(props) {
         super(props)
@@ -160,8 +161,29 @@ class AllProducts extends React.Component {
                     catWhiteTea: this.state.catWhiteTea,
                 }}
             />)
+        const ProductListMobile = ProductsDataBase.map(product =>
+            <ProductMobile
+                key={product.id}
+                product={product}
+                content={{
+                    catBlackTea: this.state.catBlackTea,
+                    catGreenTea: this.state.catGreenTea,
+                    catOolongTea: this.state.catOolongTea,
+                    catWhiteTea: this.state.catWhiteTea,
+                }}
+            />)
+        //
+        let ProductList
+        let adam = 1
+        if (adam === 1) {
+            ProductList = ProductListMobile
+        }
+        else {
+            ProductList = productDetails
+        }
+        //
         if (this.state.sortByName === true) {
-            productDetails = productDetails.sort(function(a, b) {
+            ProductList = ProductList.sort(function(a, b) {
                 if(a.props.product.name.toLowerCase() < b.props.product.name.toLowerCase()) return -1;
                 if(a.props.product.name.toLowerCase() > b.props.product.name.toLowerCase()) return 1;
             return 0;
@@ -169,12 +191,12 @@ class AllProducts extends React.Component {
         }
         //sort by value
         if (this.state.fromLowest === true) {
-            productDetails = productDetails.sort(function(a ,b) {
+            ProductList = ProductList.sort(function(a ,b) {
                     return a.props.product.price[0] - b.props.product.price[0]
                 })
         }
         if (this.state.fromHighest === true) {
-            productDetails = productDetails.sort(function(a ,b) {
+            ProductList = ProductList.sort(function(a ,b) {
                     return b.props.product.price[0] - a.props.product.price[0]
                 })
         }
@@ -199,11 +221,11 @@ class AllProducts extends React.Component {
                     }}
                 />
                 <div className="allProduct-ProductsBox">
-                    <p>
+                    <p className="allProduct-lenght">
                         {productDetails.length} tea's found. 
                     </p>
                     <div className="allProduct-ProductsList">
-                        {productDetails}
+                        {ProductList}
                     </div>
                 </div>
             </div>

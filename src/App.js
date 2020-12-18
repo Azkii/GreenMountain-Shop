@@ -76,7 +76,7 @@ function App() {
       <Route path="/product/" >
         {productDetails}
       </Route>
-      <Route path="/product/" exact>
+      <Route path="/products/" exact>
         <AllProducts />
         </Route>
     </div>
