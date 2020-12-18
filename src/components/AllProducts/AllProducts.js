@@ -175,7 +175,7 @@ class AllProducts extends React.Component {
         //
         let ProductList
         let adam = 1
-        if (adam === 1) {
+        if (this.props.content.mobile === false) {
             ProductList = ProductListMobile
         }
         else {

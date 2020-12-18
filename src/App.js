@@ -77,7 +77,7 @@ function App() {
         {productDetails}
       </Route>
       <Route path="/products/" exact>
-        <AllProducts />
+        <AllProducts content = {{ mobile : showBurger }} />
         </Route>
     </div>
   );
