@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import './ProductMobile.css'
 function ProductMobile(props) {
     const [hover, setHover] = useState(true)
-    return (
+/*Content*/
+    let contnet = 
         <div 
             onMouseEnter={() => setHover(false)}
             onMouseLeave={() => setHover(true)}
@@ -21,6 +22,31 @@ function ProductMobile(props) {
                 </div>
             </div>
         </div>
+/*end of content*/
+    if(props.content.catBlackTea === true || props.content.catGreenTea === true || props.content.catOolongTea === true || props.content.catWhiteTea === true) {
+        if (props.content.catBlackTea === false) {
+            if (props.product.type === "black-tea") {
+                contnet = ""
+            }
+        }
+        if (props.content.catGreenTea === false) {
+            if (props.product.type === "green-tea") {
+                contnet = ""
+            }
+        }
+        if (props.content.catOolongTea === false) {
+            if (props.product.type === "oolong-tea") {
+                contnet = ""
+            }
+        }
+        if (props.content.catWhiteTea === false) {
+            if (props.product.type === "white-tea") {
+                contnet = ""
+            }
+        }
+    }
+    return (
+        contnet
     )
 }
 export default ProductMobile

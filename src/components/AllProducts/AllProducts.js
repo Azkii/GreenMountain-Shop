@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './AllProducts.css'
 import CategoriesAll from './CategoriesAll'
 import ProductsDataBase from '../../productDataBase'
@@ -232,8 +233,8 @@ class AllProducts extends React.Component {
                     <ul>
                         <li>Blue Mountain.</li>
                         <li className="allProduct-FooterLinks">
-                            <p>Contact Us</p>
-                            <p>Home Page</p>
+                            <a>Contact Us</a>
+                            <Link to={"/"}><a>Home Page</a></Link>
                         </li>
                     </ul>
                 </div>
