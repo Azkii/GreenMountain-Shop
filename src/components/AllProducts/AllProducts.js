@@ -1,10 +1,9 @@
 import React from 'react'
-import TeaFinder from '../TeaFinder/TeaFinder'
 import './AllProducts.css'
 import CategoriesAll from './CategoriesAll'
 import ProductsDataBase from '../../productDataBase'
 import Product from './AllProducts-Product'
-import ProductMobile from './AllProducts-ProductMobile'
+import ProductMobile from '../Product/ProductMobile'
 class AllProducts extends React.Component {
     constructor(props) {
         super(props)
