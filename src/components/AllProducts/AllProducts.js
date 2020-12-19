@@ -227,6 +227,16 @@ class AllProducts extends React.Component {
                         {ProductList}
                     </div>
                 </div>
+                <div className="allProduct-Line"></div>
+                <div className="allProduct-Footer">
+                    <ul>
+                        <li>Blue Mountain.</li>
+                        <li className="allProduct-FooterLinks">
+                            <p>Contact Us</p>
+                            <p>Home Page</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         )
     }
