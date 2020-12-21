@@ -1,0 +1,129 @@
+@media only screen and (max-width: 1200px) {
+    .basket-Box h1 {
+        width: 100%;
+    }
+    .basket-Content {
+        width: 95%;
+    }
+    .basket-Info {
+        width: 100%;
+    }
+    .basket-Checkout {
+        width: 100%;
+    }
+}
+.basketMobile-Box {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.basketMobile-Box h1 {
+    background-color: rgb(25, 25, 129);
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.basketMobile-Product {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+    height: 150px;
+}
+.basketMobile-Photo img{
+    width: 150px;
+    height: 150px;
+}
+.basketMobile-ProductInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+.basketMobile-ProductInfoName {
+    font-size: 25px;
+}
+.basketMobile-ProductAmount1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.basketMobile-ProductPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.basketMobile-ProductAmount1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.basketMobile-ProductAmount1 p:nth-child(1) {
+    background-color: rgb(25, 25, 129);
+    color: white;
+}
+.basketMobile-ProductAmount1 p:nth-child(2) {
+    background-color: white;
+}
+.basketMobile-ProductAmount1 p:nth-child(3) {
+    background-color: white;
+    border: solid rgb(25, 25, 129) 2px;
+}
+
+
+
+
+.basketMobile-Checkout {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.basketMobile-CheckoutPrice {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+}
+.basketMobile-CheckoutButton {
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(25, 25, 129);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.basketMobile-CheckoutButton p {
+    margin-right: 10px;
+}
+.basketMobile-CheckoutButton img {
+    width: 40px;
+    height: 40px;
+}

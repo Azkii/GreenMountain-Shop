@@ -11,8 +11,12 @@
 }
 /*Basket h1*/
 .basket-Box h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(25, 25, 129);
     letter-spacing: 2px;
+    width: 80%;
 }
 /*Basket Product informations*/
 .basket-Content {

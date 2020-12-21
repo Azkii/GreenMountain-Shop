@@ -45,7 +45,11 @@ function App() {
   
   return (
     <div className="App">
-      <Basket />
+      <Basket           
+        content={{
+          mobile : showBurger,
+        }}
+      />
       <Route path="/" exact >
         <NavBar 
           content={{

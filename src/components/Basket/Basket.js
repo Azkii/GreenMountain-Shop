@@ -1,62 +1,18 @@
 import React from 'react'
+import BasketDesktop from './BasketDesktop'
+import BasketMobile from './BasketMobile'
 import "./Basket.css"
-function Basket() {
+import "./BasketMobile.css"
+function Basket(props) {
+    let basket
+    if (props.content.mobile ===! true) {
+        basket = <BasketMobile />
+    }
+    else {
+        basket = <BasketDesktop />
+    }
     return (
-        <div className="basket-Box">
-           <h1>Shoping Cart</h1>
-                <table className="basket-Content">
-                    <tr className="basket-ContentCategories">
-                        <th className="basket-ContentName">Name.</th>
-                        <th className="basket-ContentSize">Size.</th>
-                        <th className="basket-ContentQunt">Qunatity.</th>
-                        <th className="basket-ContentPrice">Price.</th>
-                        <th className="basket-ContentRemove">Remove.</th>
-                    </tr>
-                    <tr className="basket-ContentProduct">
-                        <th className="basket-ContentName">Black Tea</th>
-                        <th className="basket-ContentSize">
-                            <div>S</div>
-                        </th>
-                        <th className="basket-ContentQunt">
-                            <div>-</div>
-                            <div>0</div>
-                            <div>+</div>
-                        </th>
-                        <th className="basket-ContentPrice">10 $</th>
-                        <th className="basket-ContentRemove">
-                            <div>X</div>
-                        </th>
-                    </tr>
-                    <tr className="basket-ContentProduct">
-                        <th className="basket-ContentName">Black Tea</th>
-                        <th className="basket-ContentSize">
-                            <div>S</div>
-                        </th>
-                        <th className="basket-ContentQunt">
-                            <div>-</div>
-                            <div>0</div>
-                            <div>+</div>
-                        </th>
-                        <th className="basket-ContentPrice">10 $</th>
-                        <th className="basket-ContentRemove">
-                            <div>X</div>
-                        </th>
-                    </tr>
-                </table>
-           <ul className="basket-Info">
-               <li>Discount: 00$</li>
-               <li>Delivery price: 00$</li>
-               <li>Product price: 00$</li>
-               <li>Total: 00$</li>
-           </ul>
-           <div className="basket-Checkout">
-               <div>
-                   <input type="text" placeholder="Your disscount code."></input>
-                   <button>Apply Discount</button>
-               </div>
-               <button className="basket-CheckoutButton">Checkout</button>
-           </div>
-        </div>
+        basket
     )
 }
 export default Basket
