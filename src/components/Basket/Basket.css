@@ -1,0 +1,225 @@
+.basket-Box {
+    padding-top: 50px;
+    position: fixed;
+    z-index: 1000;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Basket h1*/
+.basket-Box h1 {
+    color: rgb(25, 25, 129);
+    letter-spacing: 2px;
+}
+/*Basket Product informations*/
+.basket-Content {
+    margin-top: 50px;
+    width: 80%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.basket-ContentCategories {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: solid rgba(0, 0, 0, 0.63) 2px;
+}
+.basket-ContentCategories th {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+/*Basket name*/
+.basket-ContentName {
+    width: 40%;
+}
+.basket-ContentProduct .basket-ContentName {
+    font-size: 30px;
+    font-weight: normal;
+}
+/*Basket size*/
+.basket-ContentSize {
+    width: 10%;
+}
+.basket-ContentSize div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: solid rgb(25, 25, 129) 2px;
+    color: rgb(25, 25, 129);
+}
+.basket-ContentSize div:hover {
+    background-color: rgb(25, 25, 129);
+    color: white;
+    transition: 0.4s;
+}
+/*Basket Content Qunt*/
+.basket-ContentQunt {
+    width: 20%;
+}
+.basket-ContentQunt div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+.basket-ContentQunt div:nth-child(1) {
+    background-color: rgb(25, 25, 129);
+    color: white;
+    border: solid rgb(25, 25, 129) 2px;
+    cursor: pointer;
+    opacity: 0.95;
+}
+.basket-ContentQunt div:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+}
+.basket-ContentQunt div:nth-child(3) {
+    background-color: white;
+    border: solid rgb(25, 25, 129) 2px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.basket-ContentQunt div:nth-child(1):hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+.basket-ContentQunt div:nth-child(3):hover {
+    background-color: rgb(25, 25, 129);
+    color: white;
+    transition: 0.2s;
+    opacity: 1;
+}
+/*Basket price*/
+.basket-ContentPrice {
+    width: 20%;
+}
+.basket-ContentProduct .basket-ContentPrice {
+    font-size: 30px;
+    font-weight: normal;
+}
+/*Basket remove*/
+.basket-ContentRemove {
+    width: 10%;
+}
+.basket-ContentRemove div {
+    font-size: 25px;
+    font-weight: normal;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(25, 25, 129) 2px;
+    border-radius: 2px;
+    color: rgb(25, 25, 129);
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.basket-ContentRemove div::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-color:rgb(25, 25, 129);
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 50% 50% 50% 50%;
+}
+.basket-ContentRemove div:hover {
+    color: white;
+}
+.basket-ContentRemove div:hover::before {
+    height: 150%;
+    width: 150%;
+}
+.basket-ContentProduct {
+    display: flex;
+    border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
+}
+.basket-ContentProduct th {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Basket INFO payment */
+.basket-Info {
+    margin-top: 50px;
+    display: flex;
+    min-width: 70%;
+    list-style: none;
+    justify-content: space-around;
+}
+.basket-Info li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border: solid rgb(25, 25, 129) 2px;
+    color: rgb(25, 25, 129);
+    font-weight: bold;
+    font-size: 18px;
+}
+/*Basket checkout */
+.basket-Checkout {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.basket-Checkout div {
+    display: flex;
+}
+.basket-Checkout div input {
+    border: solid rgb(25, 25, 129) 2px;
+    width: 480px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+.basket-Checkout div button, .basket-CheckoutButton {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 25, 129);
+    color: white;
+    width: 250px;
+    height: 60px;
+    border: none;
+    font-size: 22px;
+}
+.basket-Checkout div button:hover {
+    background: rgb(20, 20, 109);
+    transition: 0.2s;
+}
+.basket-CheckoutButton::after {
+    font-size: 30px;
+    opacity: 0;
+    content: "\27A4";
+    transition: 0.5s;
+    margin-left: -30px;
+}
+.basket-CheckoutButton:hover {
+    transition: 0.5s;
+}
+.basket-CheckoutButton:hover::after {
+    transition: 0.6s;
+    opacity: 1;
+    margin-left: 10px;
+}

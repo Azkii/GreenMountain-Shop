@@ -10,6 +10,7 @@ import Footer from './Footer'
 import ProductsDataBase from './productDataBase'
 import ProductDetails from './ProductDetails'
 import AllProducts from './components/AllProducts/AllProducts'
+import Basket from './components/Basket/Basket'
 function App() {
   const HomePageRef = useRef(null)
   const ProductsRef = useRef(null)
@@ -44,6 +45,7 @@ function App() {
   
   return (
     <div className="App">
+      <Basket />
       <Route path="/" exact >
         <NavBar 
           content={{
@@ -78,7 +80,7 @@ function App() {
       </Route>
       <Route path="/products/" exact>
         <AllProducts content = {{ mobile : showBurger }} />
-        </Route>
+      </Route>
     </div>
   );
 }
