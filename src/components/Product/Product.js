@@ -4,6 +4,18 @@ import './Product.css'
 function Product(props) {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)
+    const BuyFunction = () => {
+        const dataPush = props.product.name + props.product.id
+        var basketItem = [
+            props.product.name,
+            props.product.sizes[0],
+            props.product.price[0],
+        ]
+        var existing = localStorage.getItem(dataPush)
+        existing = existing ? existing.split(',') : [];
+        existing.push(basketItem);
+        localStorage.setItem(dataPush, existing.toString());
+    }
     //Product start
     let contnet = <div className="Wraped-Product">
                         <div onMouseEnter={handleClick} onMouseLeave = {handleClick} className={click ? "product-Container" : "product-ContainerHover product-Container" }>
@@ -17,7 +29,7 @@ function Product(props) {
                                             Discover
                                         </button>
                                     </Link>
-                                    <button className="hoverDetails-Checkout">
+                                    <button className="hoverDetails-Checkout" onClick={BuyFunction}>
                                         ADD TO CARD
                                     </button>
                                 </div>

@@ -1,6 +1,14 @@
 import React from 'react'
 import ExitIcon from '../../Photos/icons/exitBlue.svg'
+import ProductBasket from './BasketElementDesktop'
 function BasketDesktop(props) {
+    var objects = Object.values(localStorage);
+    console.log(objects)
+    const productBasket = objects.map(product =>
+        <ProductBasket
+            key={product.id}
+            product={product}
+        />)
     return (
         <div className="basket-Box">
            <img className="basket-ExitButton" src={ExitIcon} onClick={() => {props.content.setBasket(false); document.body.style.overflow = "" }} />
@@ -14,36 +22,7 @@ function BasketDesktop(props) {
                             <th className="basket-ContentPrice">Price.</th>
                             <th className="basket-ContentRemove">Remove.</th>
                         </tr>
-                        <tr className="basket-ContentProduct">
-                            <th className="basket-ContentName">Black Tea</th>
-                            <th className="basket-ContentSize">
-                                <div>S</div>
-                            </th>
-                            <th className="basket-ContentQunt">
-                                <div>-</div>
-                                <div>0</div>
-                                <div>+</div>
-                            </th>
-                            <th className="basket-ContentPrice">10 $</th>
-                            <th className="basket-ContentRemove">
-                                <div>X</div>
-                            </th>
-                        </tr>
-                        <tr className="basket-ContentProduct">
-                            <th className="basket-ContentName">Black Tea</th>
-                            <th className="basket-ContentSize">
-                                <div>S</div>
-                            </th>
-                            <th className="basket-ContentQunt">
-                                <div>-</div>
-                                <div>0</div>
-                                <div>+</div>
-                            </th>
-                            <th className="basket-ContentPrice">10 $</th>
-                            <th className="basket-ContentRemove">
-                                <div>X</div>
-                            </th>
-                        </tr>
+                        {productBasket}
                     </tbody>
                 </table>
            <ul className="basket-Info">
