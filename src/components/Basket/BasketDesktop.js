@@ -3,11 +3,11 @@ import ExitIcon from '../../Photos/icons/exitBlue.svg'
 import ProductBasket from './BasketElementDesktop'
 function BasketDesktop(props) {
     var objects = Object.values(localStorage);
-    console.log(objects)
     const productBasket = objects.map(product =>
         <ProductBasket
-            key={product.id}
+            key = {product}
             product={product}
+            content = {{setBasket : props.content.setBasket}}
         />)
     return (
         <div className="basket-Box">

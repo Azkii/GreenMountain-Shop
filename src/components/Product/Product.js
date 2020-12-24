@@ -7,6 +7,7 @@ function Product(props) {
     const BuyFunction = () => {
         const dataPush = props.product.name + props.product.id
         var basketItem = [
+            props.product.id,
             props.product.name,
             props.product.sizes[0],
             props.product.price[0],
