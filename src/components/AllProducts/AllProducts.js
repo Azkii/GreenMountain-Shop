@@ -174,7 +174,6 @@ class AllProducts extends React.Component {
             />)
         //
         let ProductList
-        let adam = 1
         if (this.props.content.mobile === false) {
             ProductList = ProductListMobile
         }
@@ -233,8 +232,8 @@ class AllProducts extends React.Component {
                     <ul>
                         <li>Blue Mountain.</li>
                         <li className="allProduct-FooterLinks">
-                            <a>Contact Us</a>
-                            <Link to={"/"}><a>Home Page</a></Link>
+                            <a href="/">Contact Us</a>
+                            <Link to={"/"}>Home Page</Link>
                         </li>
                     </ul>
                 </div>

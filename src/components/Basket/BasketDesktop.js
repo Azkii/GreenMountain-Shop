@@ -1,8 +1,10 @@
 import React from 'react'
-function BasketDesktop() {
+import ExitIcon from '../../Photos/icons/exitBlue.svg'
+function BasketDesktop(props) {
     return (
         <div className="basket-Box">
-           <h1>Shoping Cart</h1>
+           <img className="basket-ExitButton" src={ExitIcon} onClick={() => {props.content.setBasket(false); document.body.style.overflow = "" }} />
+           <h1>Shoping Cart.</h1>
                 <table className="basket-Content">
                     <tbody>
                         <tr className="basket-ContentCategories">

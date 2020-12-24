@@ -10,6 +10,7 @@ import Footer from './Footer'
 import ProductsDataBase from './productDataBase'
 import ProductDetails from './ProductDetails'
 import AllProducts from './components/AllProducts/AllProducts'
+import BasketIcon from './components/Basket/BasketIcon'
 import Basket from './components/Basket/Basket'
 function App() {
   const HomePageRef = useRef(null)
@@ -18,20 +19,18 @@ function App() {
   const scrollToHomePage = () => {HomePageRef.current.scrollIntoView()}
   const scrollToProducts= () => ProductsRef.current.scrollIntoView()
   const scrollToAboutUs = () => AboutUsRef.current.scrollIntoView()
-
   const [showBurger, setBurger] = useState(true);
+  const [showBasket, setBasket] = useState(false);
   const showNavBarMenu = () => {
       if (window.innerWidth <= 1000) {
           setBurger(false)
       }
       else {
           setBurger(true)
-          document.body.style.overflow = ""
       }
   }
   window.addEventListener('load', showNavBarMenu);
   window.addEventListener('resize', showNavBarMenu);
-
   //Render detailed items
   const productDetails = ProductsDataBase.map(product =>
     <ProductDetails
@@ -42,14 +41,21 @@ function App() {
         }}
     />)
   //
-  
   return (
     <div className="App">
-      <Basket           
+      <BasketIcon 
         content={{
-          mobile : showBurger,
+          showBasket : showBasket,
+          setBasket : setBasket,
         }}
       />
+      {showBasket ?
+        <Basket          
+          content={{
+            mobile : showBurger,
+            setBasket : setBasket,
+          }}
+        /> : "" }
       <Route path="/" exact >
         <NavBar 
           content={{

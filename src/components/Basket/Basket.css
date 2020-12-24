@@ -1,3 +1,44 @@
+/*Basket Icon section*/
+.BasketIcon-box {
+    background-color: rgb(86, 145, 156);
+    position: fixed;
+    right: 2.5%;
+    bottom: 5%;
+    z-index: 1000;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.15s;
+    opacity: 0.4;
+}
+.basket-ExitButton {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 50px;
+    transition: 0.1s;
+    opacity: 0.8;
+}
+.basket-ExitButton:hover {
+    opacity: 1;
+    width: 52px;
+    height: 52px;
+}
+.BasketIcon-box:hover {
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+    transform: rotate(15deg);
+}
+.BasketIcon-box img{
+    width: 55px;
+    height: 55px;
+}
+/*Basket Section*/
 .basket-Box {
     padding-top: 50px;
     position: fixed;
@@ -14,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(25, 25, 129);
+    color: rgb(63, 141, 156);
     letter-spacing: 2px;
     width: 80%;
 }
@@ -29,7 +70,7 @@
 .basket-ContentCategories {
     display: flex;
     padding-bottom: 10px;
-    border-bottom: solid rgba(0, 0, 0, 0.63) 2px;
+    border-bottom: solid rgb(49, 101, 112) 2px;
 }
 .basket-ContentCategories th {
     height: 50px;
@@ -58,11 +99,11 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    border: solid rgb(25, 25, 129) 2px;
-    color: rgb(25, 25, 129);
+    border: solid rgb(65, 140, 155) 2px;
+    color: rgb(65, 140, 155);
 }
 .basket-ContentSize div:hover {
-    background-color: rgb(25, 25, 129);
+    background-color: rgb(65, 140, 155);
     color: white;
     transition: 0.4s;
 }
@@ -80,18 +121,20 @@
     font-weight: normal;
 }
 .basket-ContentQunt div:nth-child(1) {
-    background-color: rgb(25, 25, 129);
+    background-color: rgb(65, 140, 155);
     color: white;
-    border: solid rgb(25, 25, 129) 2px;
+    border: solid rgb(65, 140, 155) 2px;
     cursor: pointer;
     opacity: 0.95;
 }
 .basket-ContentQunt div:nth-child(2) {
     background-color: rgb(255, 255, 255);
+    color: rgb(50, 102, 112);
 }
 .basket-ContentQunt div:nth-child(3) {
+    color: rgb(52, 108, 119);
     background-color: white;
-    border: solid rgb(25, 25, 129) 2px;
+    border: solid rgb(65, 140, 155) 2px;
     cursor: pointer;
     opacity: 0.8;
 }
@@ -100,7 +143,7 @@
     transition: 0.2s;
 }
 .basket-ContentQunt div:nth-child(3):hover {
-    background-color: rgb(25, 25, 129);
+    background-color: rgb(65, 140, 155);
     color: white;
     transition: 0.2s;
     opacity: 1;
@@ -125,9 +168,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid rgb(25, 25, 129) 2px;
+    border: solid rgb(65, 140, 155) 2px;
     border-radius: 2px;
-    color: rgb(25, 25, 129);
+    color: rgb(55, 112, 124);
     transition: 0.5s;
     cursor: pointer;
     position: relative;
@@ -138,7 +181,7 @@
     position: absolute;
     width: 0%;
     height: 0%;
-    background-color:rgb(25, 25, 129);
+    background-color:rgb(65, 140, 155);
     z-index: -1;
     transition: 0.5s;
     border-radius: 50% 50% 50% 50%;
@@ -174,8 +217,8 @@
     align-items: center;
     height: 60px;
     width: 200px;
-    border: solid rgb(25, 25, 129) 2px;
-    color: rgb(25, 25, 129);
+    border: solid rgb(91, 181, 199) 2px;
+    color: rgb(52, 108, 119);
     font-weight: bold;
     font-size: 18px;
 }
@@ -190,7 +233,7 @@
     display: flex;
 }
 .basket-Checkout div input {
-    border: solid rgb(25, 25, 129) 2px;
+    border: solid  rgb(80, 163, 180) 2px;
     width: 480px;
     padding-left: 50px;
     padding-right: 50px;
@@ -201,7 +244,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(25, 25, 129);
+    background: rgb(80, 163, 180) ;
     color: white;
     width: 250px;
     height: 60px;
@@ -209,7 +252,7 @@
     font-size: 22px;
 }
 .basket-Checkout div button:hover {
-    background: rgb(20, 20, 109);
+    background: rgb(68, 148, 167);
     transition: 0.2s;
 }
 .basket-CheckoutButton::after {
