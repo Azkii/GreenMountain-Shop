@@ -6,10 +6,10 @@ import "./BasketMobile.css"
 function Basket(props) {
     let basket
     if (props.content.mobile ===! true) {
-        basket = <BasketMobile content={{setBasket : props.content.setBasket}} />
+        basket = <BasketMobile />
     }
     else {
-        basket = <BasketDesktop content={{setBasket : props.content.setBasket}} />
+        basket = <BasketDesktop />
     }
     return (
         basket

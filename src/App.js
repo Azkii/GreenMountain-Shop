@@ -1,7 +1,7 @@
 import './App.css';
 import './AppMobile.css'
 import React, {useRef, useState} from 'react'
-import {Route} from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
 import NavBar from './Navbar'
 import HomePage from './HomePage'
 import Products from './Products'
@@ -20,7 +20,6 @@ function App() {
   const scrollToProducts= () => ProductsRef.current.scrollIntoView()
   const scrollToAboutUs = () => AboutUsRef.current.scrollIntoView()
   const [showBurger, setBurger] = useState(true);
-  const [showBasket, setBasket] = useState(false);
   const showNavBarMenu = () => {
       if (window.innerWidth <= 1000) {
           setBurger(false)
@@ -43,19 +42,16 @@ function App() {
   //
   return (
     <div className="App">
-      <BasketIcon 
-        content={{
-          showBasket : showBasket,
-          setBasket : setBasket,
-        }}
-      />
-      {showBasket ?
+      <Link to="/Shoping-cart">
+        <BasketIcon />
+      </Link>
+      <Route path="/Shoping-Cart" exact >
         <Basket          
-          content={{
-            mobile : showBurger,
-            setBasket : setBasket,
-          }}
-        /> : "" }
+            content={{
+              mobile : showBurger,
+            }}
+        />
+      </Route>
       <Route path="/" exact >
         <NavBar 
           content={{

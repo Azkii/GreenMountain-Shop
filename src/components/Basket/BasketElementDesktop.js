@@ -34,7 +34,7 @@ function BasketElementDesktop(props) {
                     onClick={(e) => {
                         localStorage.removeItem(item[1] + item[0] );
                         window.location.reload();
-                        props.content.setBasket(true)
+                        e.preventDefault()
                     }}
                 >
                     X
