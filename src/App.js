@@ -20,6 +20,7 @@ function App() {
   const scrollToProducts= () => ProductsRef.current.scrollIntoView()
   const scrollToAboutUs = () => AboutUsRef.current.scrollIntoView()
   const [showBurger, setBurger] = useState(true);
+  const [showIconBasket, setShowIconBasket] = useState(true)
   const showNavBarMenu = () => {
       if (window.innerWidth <= 1000) {
           setBurger(false)
@@ -43,12 +44,18 @@ function App() {
   return (
     <div className="App">
       <Link to="/Shoping-cart">
-        <BasketIcon />
+        <BasketIcon 
+          content={{
+            showIconBasket : showIconBasket,
+            setShowIconBasket : setShowIconBasket,
+          }} 
+        />
       </Link>
       <Route path="/Shoping-Cart" exact >
         <Basket          
             content={{
               mobile : showBurger,
+              setShowIconBasket : setShowIconBasket,
             }}
         />
       </Route>

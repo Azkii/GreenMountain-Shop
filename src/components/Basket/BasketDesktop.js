@@ -2,7 +2,7 @@ import React from 'react'
 import ExitIcon from '../../Photos/icons/exitBlue.svg'
 import ProductBasket from './BasketElementDesktop'
 import {Link} from 'react-router-dom'
-function BasketDesktop() {
+function BasketDesktop(props) {
     var objects = Object.values(localStorage);
     const productBasket = objects.map(product =>
         <ProductBasket
@@ -12,7 +12,7 @@ function BasketDesktop() {
     return (
         <div className="basket-Box">
             <Link to="/">
-                <img className="basket-ExitButton" src={ExitIcon} />
+                <img className="basket-ExitButton" src={ExitIcon} onClick={() => {props.content.setShowIconBasket(true)}} />
             </Link>
            <h1>Shoping Cart.</h1>
                 <table className="basket-Content">

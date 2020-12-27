@@ -31,10 +31,9 @@ function BasketElementDesktop(props) {
             <th className="basket-ContentPrice">{item[3]}$</th>
             <th className="basket-ContentRemove">
                 <div 
-                    onClick={(e) => {
+                    onClick={() => {
                         localStorage.removeItem(item[1] + item[0] );
                         window.location.reload();
-                        e.preventDefault()
                     }}
                 >
                     X
