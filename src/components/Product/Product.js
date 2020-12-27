@@ -5,7 +5,7 @@ function Product(props) {
     const [click, setClick] = useState(true)
     const handleClick = () => setClick(!click)
     const BuyFunction = () => {
-        const dataPush = props.product.name + props.product.id
+        const dataPush = props.product.name + props.product.id + props.product.sizes[0]
         var basketItem = [
             props.product.id,
             props.product.name,

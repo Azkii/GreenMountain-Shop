@@ -30,7 +30,7 @@ function BasketElementMobile(props) {
             </div>
             <div className="basketMobile-ContentRemove"
                 onClick={() => {
-                    localStorage.removeItem(item[1] + item[0] );
+                    localStorage.removeItem(item[1] + item[0] + item[2] );
                     window.location.reload();
                 }}
             > X </div>

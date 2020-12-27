@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom'
 import './ProductMobile.css'
 function ProductMobile(props) {
     const [hover, setHover] = useState(true)
+    const BuyFunction = () => {
+        const dataPush = props.product.name + props.product.id + props.product.sizes[0]
+        var basketItem = [
+            props.product.id,
+            props.product.name,
+            props.product.sizes[0],
+            props.product.price[0],
+        ]
+        var existing = localStorage.getItem(dataPush)
+        existing = existing ? existing.split(',') : [];
+        existing.push(basketItem);
+        localStorage.setItem(dataPush, existing.toString());
+    }
 /*Content*/
     let contnet = 
         <div 
@@ -18,7 +31,9 @@ function ProductMobile(props) {
                     <Link to={`/product/${props.product.name + props.product.id}`}>
                         <button className="productMobile-Details productMobile-Button">Details.</button>
                     </Link>
-                    <button className="productMobile-Cart productMobile-Button">Add to cart.</button>
+                    <button className="productMobile-Cart productMobile-Button" onClick={BuyFunction}>
+                        Add to cart.
+                    </button>
                 </div>
             </div>
         </div>

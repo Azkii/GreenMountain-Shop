@@ -53,7 +53,7 @@
 }
 /*Start of Porudct in basket*/
 .basketMobile-ProductList {
-    min-height: 400px;
+    height: 400px;
     margin-bottom: 200px;
 }
 .basketMobile-Product {
@@ -121,6 +121,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    cursor: pointer;
 }
 .basketMobile-ContentRemove::before {
     content: "";

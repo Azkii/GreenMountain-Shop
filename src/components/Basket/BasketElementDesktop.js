@@ -32,7 +32,7 @@ function BasketElementDesktop(props) {
             <th className="basket-ContentRemove">
                 <div 
                     onClick={() => {
-                        localStorage.removeItem(item[1] + item[0] );
+                        localStorage.removeItem(item[1] + item[0] + item[2] );
                         window.location.reload();
                     }}
                 >
