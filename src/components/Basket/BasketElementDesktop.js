@@ -1,9 +1,12 @@
 import React,{useState} from 'react'
 function BasketElementDesktop(props) {
+    const [deleted, setDeleted] = useState(false)
     let item = props.product.split(",")
     /*Remember to change value of / when chenging size of the array with data passed to Basket*/
     const [click, setClick] = useState(item.length / 4)
     return (
+        <div>
+        {deleted ? "" : 
         <tr className="basket-ContentProduct">
             <th className="basket-ContentName">{item[1]}</th>
             <th className="basket-ContentSize">
@@ -32,14 +35,15 @@ function BasketElementDesktop(props) {
             <th className="basket-ContentRemove">
                 <div 
                     onClick={() => {
-                        localStorage.removeItem(item[1] + item[0] + item[2] );
-                        window.location.reload();
+                        localStorage.removeItem(item[1] + item[0] + item[2] )
+                        setDeleted(true)
                     }}
                 >
                     X
                 </div>
             </th>
-        </tr>
+        </tr>}
+        </div>
     )
 }
 export default BasketElementDesktop
